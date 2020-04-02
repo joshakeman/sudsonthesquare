@@ -1,10 +1,44 @@
 .background {
-    background-image: url('../images//suds-main.jpg') no-repeat center center fixed; 
+    background: url('../images/brickwall.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 1200px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div.paper-wrapper{
+    width: 66%;
+    margin: 20px auto;
+    position: relative;
+}
+
+img.paper {
+    width: 100%;
+}
+
+.menu-button {
+    width: 110px;
+    position: absolute;
+    top: 5%;
+    right: 30%;
+    cursor: pointer;
+}
+
+.menu-text {
+    position: absolute;
+    top: 20%;
+    right: 23%;
+}
+
+.menu-text > p {
+    font-weight: bold;
+    margin: 0;
 }
 
 img.bg {

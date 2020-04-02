@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -6,32 +6,52 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 import Img from "gatsby-image"
-import background from '../images/suds-main.jpg'
+import brickwall from '../images/brickwall.jpg'
+import background from '../images/paper-only-background.png'
+import menuButton from '../images/menu-button.png'
 import '../styles/home.css'
 
-const IndexPage = () => (
-  // <Layout>
-  <>
-    <SEO title="Home" />
-    {/* <div className="background">
+const IndexPage = () => {
 
-    </div> */}
-      <img className="bg" src={background}></img>
-    {/* <Img className="bg" fluid={data.background.childImageSharp.fluid} /> */}
-  </>
-  // </Layout>
-)
+  const data = useStaticQuery(graphql`
+      query {
+        background: file(relativePath: { eq: "paper-only-background.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 3000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `)
+  const [showMenu, toggleMenu] = useState(false);
 
-// const data = useStaticQuery(graphql`
-//     query {
-//       background: file(relativePath: { eq: "suds-main.png" }) {
-//         childImageSharp {
-//           fluid(maxWidth: 3000) {
-//             ...GatsbyImageSharpFluid
-//           }
-//         }
-//       }
-//     }
-//   `)
+  return (
+    <>
+      <SEO title="Home" />
+      <div className="background">
+        <div className="paper-wrapper">
+          <img className="paper" src={background}></img>
+          {/* <Img className="paper" fluid={data.background.childImageSharp.fluid} /> */}
+          <img className="menu-button" src={menuButton}  onClick={() => toggleMenu(!showMenu)}></img>
+
+          {
+            showMenu ? (
+              <div className="menu-text">
+              <p>Hey I'm a menu</p>
+              <p>Hey I'm a menu</p>
+              <p>Hey I'm a menu</p>
+              <p>Hey I'm a menu</p>
+              <p>Hey I'm a menu</p>
+              <p>Hey I'm a menu</p>
+              </div>
+            ) : null
+          }
+        </div>
+      </div>
+    </>
+  )
+  }
+
 
 export default IndexPage
