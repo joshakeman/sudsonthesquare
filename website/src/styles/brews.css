@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'vtks_distressregular';
+    src: url('vtks_distress-webfont.woff2') format('woff2'),
+         url('vtks_distress-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.brews-background {
+    background: url('../images/brews-background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+}
+
+.brews-body {
+    width: 800px;
+    margin: 40px auto 0 auto;
+}
+
+.brews-title {
+    font-size: 56px;
+    margin: 0;
+    font-family: 'vtks_distressregular';
+    letter-spacing: 0.3em;
+    line-height: 1.25;
+    color: #503626;
+    text-align: center;
+}
+
+.brews-header {
+    display: flex;
+    align-items: center;
+}
+
+.brews-header > img {
+    max-width: 200px;
+    margin: 0 20px 0 0;
+}

@@ -38,12 +38,12 @@ const IndexPage = () => {
           {
             showMenu ? (
               <div className="menu-text">
-              <p>Hey I'm a menu</p>
-              <p>Hey I'm a menu</p>
-              <p>Hey I'm a menu</p>
-              <p>Hey I'm a menu</p>
-              <p>Hey I'm a menu</p>
-              <p>Hey I'm a menu</p>
+              <p>BREWS</p>
+              <p>TUNES</p>
+              <p>PIX</p>
+              <p>SWAG</p>
+              <p>FACTS</p>
+              <p>TIX</p>
               </div>
             ) : null
           }
