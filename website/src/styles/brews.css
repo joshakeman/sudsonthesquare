@@ -1,10 +1,10 @@
-@font-face {
+/* @font-face {
     font-family: 'vtks_distressregular';
     src: url('vtks_distress-webfont.woff2') format('woff2'),
          url('vtks_distress-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 .brews-background {
     background: url('../images/brews-background.jpg') no-repeat center center fixed;
@@ -19,12 +19,12 @@
 }
 
 .brews-body {
-    width: 800px;
+    width: 600px;
     margin: 40px auto 0 auto;
 }
 
 .brews-title {
-    font-size: 56px;
+    font-size: 82px;
     margin: 0;
     font-family: 'vtks_distressregular';
     letter-spacing: 0.3em;
@@ -36,9 +36,31 @@
 .brews-header {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .brews-header > img {
     max-width: 200px;
     margin: 0 20px 0 0;
+}
+
+.brews-subtitle {
+    font-size: 21px;
+    font-family: 'vtks_distressregular';
+    color: #503626;
+    text-align: center;
+    letter-spacing: 0.3em;
+    line-height: 1.25;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.logo-container > img {
+    width: 21%;
 }
