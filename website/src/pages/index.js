@@ -42,7 +42,7 @@ const IndexPage = () => {
               <Link>TUNES</Link>
               <Link>PIX</Link>
               <Link>SWAG</Link>
-              <Link>FACTS</Link>
+              <Link to="/facts">FACTS</Link>
               <Link>TIX</Link>
               </div>
             ) : null

@@ -23,7 +23,7 @@
 }
 
 .background {
-    background: url('../images/brickwall.jpg') no-repeat center center fixed;
+    background: url('../images/brickwall-optimized.jpg') no-repeat center center fixed;
     /* background: url('../images/cement.jpg') no-repeat center center fixed;  */
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -94,3 +94,124 @@ img.bg {
       margin-left: -512px;   /* 50% */
     }
   }
+
+  /* 
+  ~~~~BREWS~~~~
+  */
+
+.brews-background {
+    background: url('../images/brews-background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+}
+
+.body {
+    width: 600px;
+    margin: 40px auto 0 auto;
+}
+
+.brews-title {
+    font-size: 82px;
+    margin: 0;
+    font-family: 'vtks_distressregular';
+    letter-spacing: 0.3em;
+    line-height: 1.25;
+    color: #503626;
+    text-align: center;
+}
+
+.brews-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.brews-header > img {
+    max-width: 200px;
+    margin: 0 20px 0 0;
+}
+
+.brews-subtitle {
+    font-size: 21px;
+    font-family: 'vtks_distressregular';
+    color: #503626;
+    text-align: center;
+    letter-spacing: 0.3em;
+    line-height: 1.25;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.logo-container > img {
+    width: 21%;
+}
+
+/* 
+  ~~~~FACTS~~~~
+  */
+  .facts-title {
+    font-size: 82px;
+    margin: 0;
+    font-family: 'vtks_distressregular';
+    letter-spacing: 0.3em;
+    line-height: 1.25;
+    color: #bba88b;
+    text-align: center;
+}
+
+.facts-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.facts-header > img {
+    max-width: 148px;
+    margin: 0;
+}
+
+.caps-container {
+    width: 100%;
+    position: relative;
+}
+
+.bottle-cap {
+    width: 75px;
+}
+
+.cap1 {
+    position: absolute;
+}
+.cap2 {
+    position: absolute;
+}
+.cap3 {
+    position: absolute;
+}
+.cap4 {
+    position: absolute;
+}
+.cap5 {
+    position: absolute;
+}
+.cap6 {
+    position: absolute;
+}
+
+.body {
+    width: 600px;
+    margin: 40px auto 0 auto;
+}

@@ -8,7 +8,7 @@ import jailhouseColor from '../images/jailhouse-color.png'
 import wildleapBrown from '../images/wildleap-brown.png'
 import wildleapColor from '../images/wildleap-color.png'
 
-import '../styles/brews.css'
+import '../styles/home.css'
 
 class Brews extends React.Component {
 
@@ -32,10 +32,10 @@ class Brews extends React.Component {
    
 
     render() {
-        const { abita, jailhouse, wildleap } = image
+        const { abita, wildleap, jailhouse } = this.state
         return (
             <div className="brews-background">
-                <div className="brews-body">
+                <div className="body">
                     <div className="brews-header">
                         <img src={beer} className="beer" />
                         <h1 className="brews-title">BREWS</h1>
@@ -47,8 +47,6 @@ class Brews extends React.Component {
                     </h3>
                     <div className="logo-container">
                         <img src={abita} 
-                            onMouseOver={() => this.changeImage('abita')} 
-                            onMouseOut={e => (e.currentTarget.src = abita)} 
                             />
                         <img src={wildleap} />
                         <img src={jailhouse} />
