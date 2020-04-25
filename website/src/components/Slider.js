@@ -3,12 +3,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import abitaBrown from '../images/abita-brown.png'
-import abitaColor from '../images/abita-color.png'
-import jailhouseBrown from '../images/jailhouse-brown.png'
-import jailhouseColor from '../images/jailhouse-color.png'
-import wildleapBrown from '../images/wildleap-brown.png'
-import wildleapColor from '../images/wildleap-color.png'
+import suds1 from '../images/suds-1.jpg'
+import suds2 from '../images/suds-2.jpg'
+import suds3 from '../images/suds-3.jpg'
+import suds4 from '../images/suds-4.jpg'
+import suds5 from '../images/suds-5.jpg'
+import suds6 from '../images/suds-6.jpg'
 
 function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
@@ -24,34 +24,36 @@ function SamplePrevArrow(props) {
 class SimpleSlider extends React.Component {
     render() {
       var settings = {
-        className: "center",
+        className: "slider-wrap",
         centerMode: true,
         infinite: true,
         centerPadding: "60px",
         slidesToShow: 3,
-        speed: 500,
+        slidesToScroll: 1,
         arrows: true,
-        autoplay: true
+        autoplay: true,
+        autoplaySpeed: 2000,
+        infinite: true
       };
       return (
         <Slider {...settings}>
           <div>
-            <img src={abitaBrown} className="slide-images"/>
+            <img src={suds1} className="slide-images"/>
           </div>
           <div>
-            <img src={abitaColor} className="slide-images"/>
+            <img src={suds2} className="slide-images"/>
           </div>
           <div>
-            <img src={jailhouseBrown} className="slide-images"/>
+            <img src={suds3} className="slide-images"/>
           </div>
           <div>
-            <img src={jailhouseColor} className="slide-images"/>
+            <img src={suds4} className="slide-images"/>
           </div>
           <div>
-            <img src={wildleapBrown} className="slide-images"/>
+            <img src={suds5} className="slide-images"/>
           </div>
           <div>
-            <img src={wildleapColor} className="slide-images"/>
+            <img src={suds6} className="slide-images"/>
           </div>
         </Slider>
       );
