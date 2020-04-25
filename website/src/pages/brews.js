@@ -63,7 +63,7 @@ class Brews extends React.Component {
                         <img src={wildleap} />
                         <img src={jailhouse} />
                     </div>
-                    <div className={"paper " + (this.state.open ? "paper-open" : "")}>
+                    <div className={"menu-paper " + (this.state.open ? "menu-paper-open" : "")}>
                         <div className="mobile-menu-text">
                             <Link to="/brews">BREWS</Link>
                             <Link>TUNES</Link>

@@ -274,7 +274,7 @@ img.bg {
 
 /* Mobile Menu */
 
-.paper {
+.menu-paper {
     background: url("../images/brews-background.jpg") no-repeat center center;
     background-size: cover;
     width:600px;
@@ -286,7 +286,7 @@ img.bg {
     bottom: 0;
   }
   
-.paper-open {
+.menu-paper-open {
     height: 100%;
   }
 
@@ -337,3 +337,17 @@ img.bg {
     letter-spacing: 0.2em;
     line-height: 1.25;
 }
+
+/* 
+  ~~~~SLIDER~~~~
+  */
+
+  .slide-images {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .prev-arrow {
+      width: 100px;
+      height: 100px;
+  }

@@ -8,6 +8,8 @@ import links from '../images/links.png'
 import map from '../images/map.png'
 import sponsors from '../images/sponsors.png'
 
+import Slider from '../components/Slider'
+
 import menuButton from '../images/menu-button.png'
 import '../styles/home.css'
 
@@ -36,15 +38,8 @@ export default function pix() {
                         might just show up unannounced
                     </h3>
                 </div>
-                <div className="caps-container">
-                    <img src={contact} className="bottle-cap contact-cap" />
-                    <img src={faq} className="bottle-cap faq-cap" />
-                    <img src={hosts} className="bottle-cap hosts-cap" />
-                    <img src={links} className="bottle-cap links-cap" />
-                    <img src={map} className="bottle-cap map-cap" />
-                    <img src={sponsors} className="bottle-cap sponsors-cap" />
-                </div>
             </div>
+            <Slider />
         </div>
     )
 }
