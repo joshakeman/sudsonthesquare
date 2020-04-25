@@ -27,6 +27,7 @@
     font-size: 82px;
     margin: 0;
     font-family: 'vtks_distressregular';
+    font-weight: 400;
     letter-spacing: 0.3em;
     line-height: 1.25;
     color: #503626;
@@ -48,6 +49,7 @@
 .brews-subtitle {
     font-size: 21px;
     font-family: 'vtks_distressregular';
+    font-weight: 400;
     color: #503626;
     text-align: center;
     letter-spacing: 0.3em;
