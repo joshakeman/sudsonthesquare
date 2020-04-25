@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from "gatsby"
 // Image imports
 import beer from '../images/beer.png'
 import abitaBrown from '../images/abita-brown.png'
@@ -8,6 +9,7 @@ import jailhouseColor from '../images/jailhouse-color.png'
 import wildleapBrown from '../images/wildleap-brown.png'
 import wildleapColor from '../images/wildleap-color.png'
 
+import menuButton from '../images/menu-button.png'
 import '../styles/home.css'
 
 class Brews extends React.Component {
@@ -18,7 +20,8 @@ class Brews extends React.Component {
         this.state={
             abita: abitaBrown,
             jailhouse: jailhouseBrown,
-            wildleap: wildleapBrown
+            wildleap: wildleapBrown,
+            open: false
         }
     }
 
@@ -29,12 +32,21 @@ class Brews extends React.Component {
             })
         }
     }
+
+    openMenu = () => {
+        this.setState({
+            open: !this.state.open
+        })
+    }
    
 
     render() {
         const { abita, wildleap, jailhouse } = this.state
         return (
             <div className="brews-background">
+                <div className="mobile-menu-button-wrapper">
+                    <img className="mobile-menu-button" src={menuButton} onClick={this.openMenu} />
+                </div>
                 <div className="body">
                     <div className="brews-header">
                         <img src={beer} className="beer" />
@@ -51,8 +63,15 @@ class Brews extends React.Component {
                         <img src={wildleap} />
                         <img src={jailhouse} />
                     </div>
-                    <div className="paper">
-                        
+                    <div className={"paper " + (this.state.open ? "paper-open" : "")}>
+                        <div className="mobile-menu-text">
+                            <Link to="/brews">BREWS</Link>
+                            <Link>TUNES</Link>
+                            <Link>PIX</Link>
+                            <Link>SWAG</Link>
+                            <Link to="/facts">FACTS</Link>
+                            <Link>TIX</Link>
+                        </div>
                     </div>
                 </div>  
             </div>

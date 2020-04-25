@@ -53,6 +53,7 @@ img.paper {
     top: 5%;
     right: 25%;
     cursor: pointer;
+    z-index: 100;
 }
 
 .menu-text {
@@ -108,12 +109,13 @@ img.bg {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
 .body {
     width: 600px;
-    margin: 40px auto 0 auto;
+    margin: 120px auto 0 auto;
 }
 
 .brews-title {
@@ -173,6 +175,7 @@ img.bg {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 .facts-title {
@@ -255,24 +258,54 @@ img.bg {
     top: 170px;
 }
 
-.body {
-    width: 600px;
-    margin: 40px auto 0 auto;
-}
-
 /* Mobile Menu */
 
 .paper {
     background: url("../images/brews-background.jpg") no-repeat center center;
     background-size: cover;
     width:600px;
-    height: 10%;
+    height: 0%;
     align-self: flex-end;
     transition-property: height;
     transition-duration: 2s;
     position: absolute;
+    bottom: 0;
   }
   
-  .paper:hover {
+.paper-open {
     height: 100%;
   }
+
+.mobile-menu-button-wrapper {
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mobile-menu-button {
+    position: absolute;
+    z-index: 100;
+    width: 115px;
+    right: 0;
+  }
+
+.mobile-menu-button:hover {
+    cursor: pointer;
+  }
+
+.mobile-menu-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.mobile-menu-text > a {
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    font-family: 'vtks_distressregular';
+    letter-spacing: 0.3em;
+    line-height: 1.25;
+    color: #503626;
+}
