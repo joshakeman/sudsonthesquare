@@ -6,7 +6,7 @@
     font-style: normal;
 } */
 
-.brews-background {
+/* .brews-background {
     background: url('../images/brews-background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -27,7 +27,7 @@
     font-size: 82px;
     margin: 0;
     font-family: 'vtks_distressregular';
-    font-weight: 400;
+    font-weight: normal;
     letter-spacing: 0.3em;
     line-height: 1.25;
     color: #503626;
@@ -65,4 +65,4 @@
 
 .logo-container > img {
     width: 21%;
-}
+} */

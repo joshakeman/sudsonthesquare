@@ -51,6 +51,9 @@ class Brews extends React.Component {
                         <img src={wildleap} />
                         <img src={jailhouse} />
                     </div>
+                    <div className="paper">
+                        
+                    </div>
                 </div>  
             </div>
         )

@@ -11,19 +11,24 @@ import '../styles/home.css'
 
 export default function facts() {
     return (
-        <div className="background">
+        <div className="facts-background">
             <div className="body">
                 <div className="facts-header">
-                    <img src={bottles} className="beer" />
-                    <h1 className="facts-title">FACTS</h1>
+                    <div className="logo-wrapper">
+                        <img src={bottles} className="beer" />
+                        <h1 className="facts-title">FACTS</h1>
+                    </div>
+                    <h3 className="facts-subtitle">
+                        Other Stuff You Might Want to Know
+                    </h3>
                 </div>
                 <div className="caps-container">
-                    <img src={contact} className="bottle-cap cap1" />
-                    <img src={faq} className="bottle-cap cap2" />
-                    <img src={hosts} className="bottle-cap cap3" />
-                    <img src={links} className="bottle-cap cap4" />
-                    <img src={map} className="bottle-cap cap5" />
-                    <img src={sponsors} className="bottle-cap cap6" />
+                    <img src={contact} className="bottle-cap contact-cap" />
+                    <img src={faq} className="bottle-cap faq-cap" />
+                    <img src={hosts} className="bottle-cap hosts-cap" />
+                    <img src={links} className="bottle-cap links-cap" />
+                    <img src={map} className="bottle-cap map-cap" />
+                    <img src={sponsors} className="bottle-cap sponsors-cap" />
                 </div>
             </div>
         </div>
