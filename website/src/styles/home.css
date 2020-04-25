@@ -323,3 +323,17 @@ img.bg {
     line-height: 1.25;
     color: #503626;
 }
+
+/* 
+  ~~~~PIX~~~~
+  */
+
+  .pix-subtitle {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'vtks_distressregular';
+    color: #bba88b;
+    text-align: center;
+    letter-spacing: 0.2em;
+    line-height: 1.25;
+}
