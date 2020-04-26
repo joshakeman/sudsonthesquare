@@ -46,7 +46,7 @@ class Swag extends React.Component {
                         <h2><span className="pipes">i</span></h2>
                         <h2>Throws</h2>
                     </div>
-                    <div className={"paper " + (this.state.open ? "paper-open" : "")}>
+                    {/* <div className={"paper " + (this.state.open ? "paper-open" : "")}>
                         <div className="mobile-menu-text">
                             <Link to="/brews">BREWS</Link>
                             <Link>TUNES</Link>
@@ -55,7 +55,7 @@ class Swag extends React.Component {
                             <Link to="/facts">FACTS</Link>
                             <Link>TIX</Link>
                         </div>
-                    </div>
+                    </div> */}
                 </div>  
             </div>
         )

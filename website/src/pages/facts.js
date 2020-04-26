@@ -1,5 +1,5 @@
 import React from 'react'
-import bottles from '../images/bottles.png'
+import bottles from '../images/bottles-brad.png'
 
 import contact from '../images/contact.png'
 import faq from '../images/faq.png'
