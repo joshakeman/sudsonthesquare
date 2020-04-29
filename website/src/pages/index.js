@@ -40,8 +40,8 @@ const IndexPage = () => {
               <div className="menu-text">
               <Link to="/brews">BREWS</Link>
               <Link>TUNES</Link>
-              <Link>PIX</Link>
-              <Link>SWAG</Link>
+              <Link to="/pix">PIX</Link>
+              <Link to="/swag">SWAG</Link>
               <Link to="/facts">FACTS</Link>
               <Link>TIX</Link>
               </div>

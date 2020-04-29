@@ -35,6 +35,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 div.paper-wrapper{
@@ -47,12 +48,19 @@ img.paper {
     width: 100%;
 }
 
+@media (max-width: 800px) {
+    img.paper {
+        width: 1000px;
+    }
+}
+
 .menu-button {
     width: 13%;
     position: absolute;
     top: 5%;
     right: 25%;
     cursor: pointer;
+    z-index: 100;
 }
 
 .menu-text {
@@ -108,16 +116,18 @@ img.bg {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
 .body {
     width: 600px;
-    margin: 40px auto 0 auto;
+    margin: 120px auto 0 auto;
 }
 
 .brews-title {
     font-size: 82px;
+    font-weight: normal;
     margin: 0;
     font-family: 'vtks_distressregular';
     letter-spacing: 0.3em;
@@ -140,6 +150,7 @@ img.bg {
 
 .brews-subtitle {
     font-size: 21px;
+    font-weight: normal;
     font-family: 'vtks_distressregular';
     color: #503626;
     text-align: center;
@@ -154,6 +165,20 @@ img.bg {
     margin-top: 60px;
 }
 
+.logo-container > h2 {
+    font-size: 36px;
+    font-weight: normal;
+    font-family: 'vtks_distressregular';
+    color: #503626;
+}
+
+.pipes {
+    font-size: 76px;
+    font-weight: 100;
+    font-family: 'vtks_distressregular';
+    color: #503626;
+}
+
 .logo-container > img {
     width: 21%;
 }
@@ -161,8 +186,22 @@ img.bg {
 /* 
   ~~~~FACTS~~~~
   */
-  .facts-title {
-    font-size: 82px;
+
+.facts-background {
+    background: url('../images/brickwall-optimized.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.facts-title {
+    font-size: 96px;
+    font-weight: normal;
     margin: 0;
     font-family: 'vtks_distressregular';
     letter-spacing: 0.3em;
@@ -171,16 +210,32 @@ img.bg {
     text-align: center;
 }
 
+.facts-subtitle {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'vtks_distressregular';
+    color: #bba88b;
+    text-align: center;
+    letter-spacing: 0.3em;
+    line-height: 1.25;
+}
+
 .facts-header {
     display: flex;
     align-items: baseline;
     justify-content: center;
+    flex-direction: column;
     margin-bottom: 10px;
 }
 
-.facts-header > img {
-    max-width: 148px;
-    margin: 0;
+.logo-wrapper > img {
+    max-width: 164px;
+    margin: 0 12px 0 0;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: flex-end;
 }
 
 .caps-container {
@@ -189,29 +244,121 @@ img.bg {
 }
 
 .bottle-cap {
-    width: 75px;
+    width: 125px;
 }
 /* comment */
-.cap1 {
+.contact-cap {
     position: absolute;
+    position: absolute;
+    right: 26%;
 }
-.cap2 {
+.faq-cap {
     position: absolute;
+    left: 6%;
+    top: 140px;
 }
-.cap3 {
+.hosts-cap {
     position: absolute;
+    position: absolute;
+    left: 16%;
 }
-.cap4 {
+.links-cap {
     position: absolute;
+    right: 36%;
+    top: 360px;
 }
-.cap5 {
+.map-cap {
     position: absolute;
+    position: absolute;
+    top: 230px;
+    right: 26%;
 }
-.cap6 {
+.sponsors-cap {
     position: absolute;
+    left: 30%;
+    top: 170px;
 }
 
-.body {
+/* Mobile Menu */
+
+.menu-paper {
+    background: url("../images/brews-background.jpg") no-repeat center center;
+    background-size: cover;
+    width:600px;
+    height: 0%;
+    align-self: flex-end;
+    transition-property: height;
+    transition-duration: 2s;
+    position: absolute;
+    bottom: 0;
+  }
+  
+.menu-paper-open {
+    height: 100%;
+  }
+
+.mobile-menu-button-wrapper {
     width: 600px;
-    margin: 40px auto 0 auto;
+    margin: 0 auto;
+    position: relative;
 }
+
+.mobile-menu-button {
+    position: absolute;
+    z-index: 100;
+    width: 115px;
+    right: 0;
+  }
+
+.mobile-menu-button:hover {
+    cursor: pointer;
+  }
+
+.mobile-menu-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.mobile-menu-text > a {
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    font-family: 'vtks_distressregular';
+    letter-spacing: 0.3em;
+    line-height: 1.25;
+    color: #503626;
+}
+
+/* 
+  ~~~~PIX~~~~
+  */
+
+  .pix-subtitle {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'vtks_distressregular';
+    color: #bba88b;
+    text-align: center;
+    letter-spacing: 0.2em;
+    line-height: 1.25;
+}
+
+/* 
+  ~~~~SLIDER~~~~
+  */
+
+  .slide-images {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .prev-arrow {
+      width: 100px;
+      height: 100px;
+  }
+  
+  .slider-wrap {
+      margin-top: 80px;
+  }
