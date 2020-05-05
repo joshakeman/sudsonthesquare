@@ -44,6 +44,18 @@ div.paper-wrapper{
     position: relative;
 }
 
+@media (max-width: 1208px) {
+    div.paper-wrapper{
+        width: 88%;
+    }
+}
+
+@media (max-width: 800px) {
+    div.paper-wrapper{
+        width: auto;
+    }
+}
+
 img.paper {
     width: 100%;
 }
