@@ -24,16 +24,34 @@ function SamplePrevArrow(props) {
 class SimpleSlider extends React.Component {
     render() {
       var settings = {
-        // className: "slider-wrap",
-        centerMode: true,
-        // infinite: true,
-        // centerPadding: "60px",
         slidesToShow: 3,
-        // slidesToScroll: 1,
-        // arrows: true,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
-        // infinite: true
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        // dots: true,
+        responsive: [
+          {
+            breakpoint: 1412,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              // infinite: true,
+            }
+          },
+          {
+            breakpoint: 964,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       };
       return (
         <div className="slider-container">

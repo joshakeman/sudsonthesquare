@@ -384,3 +384,7 @@ img.bg {
   .slider-container {
       padding: 60px;
   }
+
+  .slick-dots {
+      color: white;
+  }
