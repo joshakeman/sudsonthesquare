@@ -66,6 +66,12 @@ img.paper {
     }
 }
 
+@media (max-width: 500px) {
+    img.paper {
+        width: 700px;
+    }
+}
+
 .menu-button {
     width: 13%;
     position: absolute;
@@ -373,4 +379,8 @@ img.bg {
   
   .slider-wrap {
       margin-top: 80px;
+  }
+
+  .slider-container {
+      padding: 60px;
   }
