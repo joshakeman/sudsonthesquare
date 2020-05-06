@@ -366,9 +366,30 @@ img.bg {
 /* 
   ~~~~TUNES~~~~
   */
-  
-.guitar {
 
+.tunes-title {
+    font-size: 86px;
+    font-weight: normal;
+    margin: 0;
+    font-family: 'vtks_distressregular';
+    letter-spacing: 0.3em;
+    line-height: 1.25;
+    color: #bba88b;
+    text-align: center;
+}
+
+.tunes-subtitle {
+    font-size: 22px;
+    font-weight: normal;
+    font-family: 'vtks_distressregular';
+    color: #bba88b;
+    text-align: center;
+    letter-spacing: 0.2em;
+    line-height: 1.25;
+}
+
+#guitar {
+    max-width: 260px;
 }
 
 /* 

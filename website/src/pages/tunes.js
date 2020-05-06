@@ -20,10 +20,10 @@ export default function tunes() {
             <div className="body">
                 <div className="facts-header">
                     <div className="logo-wrapper">
-                        <h1 className="facts-title">TUNES</h1>
-                        <img src={guitar} className="guitar" />
+                        <h1 className="tunes-title">TUNES</h1>
+                        <img src={guitar} id="guitar" />
                     </div>
-                    <h2 className="pix-subtitle">
+                    <h2 className="tunes-subtitle">
                         Live Music on the Old Courthouse Square
                     </h2>
                 </div>
