@@ -392,6 +392,37 @@ img.bg {
     max-width: 260px;
 }
 
+.tunes-content {
+    width: 860px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.singer-photo {
+    position: absolute;
+    top: 0;
+    left: 80px;
+}
+
+.singer-photo > img {
+    width: 320px;
+}
+
+.description-sheet {
+    background: url('../images//single-sheet.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 60px;
+    width: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tunes-description {
+    font-size: 16px;
+}
+
 /* 
   ~~~~SLIDER~~~~
   */
