@@ -1,15 +1,15 @@
 import React from 'react'
-import bottles from '../images/bottles-brad.png'
+import bottles from '../../images/bottles-brad.png'
 
-import contact from '../images/contact.png'
-import faq from '../images/faq.png'
-import hosts from '../images/hosts.png'
-import links from '../images/links.png'
-import map from '../images/map.png'
-import sponsors from '../images/sponsors.png'
+import contact from '../../images/contact.png'
+import faq from '../../images/faq.png'
+import hosts from '../../images/hosts.png'
+import links from '../../images/links.png'
+import map from '../../images/map.png'
+import sponsors from '../../images/sponsors.png'
 
-import menuButton from '../images/menu-button.png'
-import '../styles/home.css'
+import menuButton from '../../images/menu-button.png'
+import '../../styles/home.css'
 
 export default function facts() {
 
