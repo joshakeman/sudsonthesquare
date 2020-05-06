@@ -401,11 +401,11 @@ img.bg {
 .singer-photo {
     position: absolute;
     top: 0;
-    left: 80px;
+    left: 20px;
 }
 
 .singer-photo > img {
-    width: 320px;
+    width: 380px;
 }
 
 .description-sheet {
