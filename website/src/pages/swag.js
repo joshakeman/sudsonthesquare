@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Link } from "gatsby"
 // Image imports
 import dog from '../images/dog.png'
+import bottleOpenerTab from '../images/bottle-opener-tab.png'
+import brewTab from '../images/brew-tab.png'
 
 import menuButton from '../images/menu-button.png'
 import '../styles/home.css'
@@ -45,6 +47,10 @@ class Swag extends React.Component {
                         <h2>Tees</h2>
                         <h2><span className="pipes">i</span></h2>
                         <h2>Throws</h2>
+                    </div>
+                    <div style={{display:'flex', justifyContent: 'center', paddingLeft: 50}}>
+                        <img src={brewTab} style={{width:275}}/>
+                        <img src={bottleOpenerTab} style={{width:275, marginLeft:'-50px'}}/>
                     </div>
                     {/* <div className={"paper " + (this.state.open ? "paper-open" : "")}>
                         <div className="mobile-menu-text">
