@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import dog from '../images/dog.png'
 import bottleOpenerTab from '../images/bottle-opener-tab.png'
 import brewTab from '../images/brew-tab.png'
+import bottleOpener from '../images/bottle-opener.png'
 
 import menuButton from '../images/menu-button.png'
 import '../styles/home.css'
@@ -14,6 +15,7 @@ class Swag extends React.Component {
         super(props)
 
         this.state={
+            open: false
         }
     }
 
@@ -27,43 +29,53 @@ class Swag extends React.Component {
 
     render() {
         const { abita, wildleap, jailhouse } = this.state
+        const bottleOpenerWidth = 500
+        const bottleOpenerHeight = 809
         return (
-            <div className="brews-background">
-                <div className="mobile-menu-button-wrapper">
-                    <img className="mobile-menu-button" src={menuButton} onClick={this.openMenu} />
-                </div>
-                <div className="body">
-                    <div className="brews-header">
-                        <img src={dog} className="beer" />
-                        <h1 className="brews-title">SWAG</h1>
+            <>
+                <div className="brews-background">
+                    <div className="mobile-menu-button-wrapper">
+                        <img className="mobile-menu-button" src={menuButton} onClick={this.openMenu} />
                     </div>
-                    <h3 className="brews-subtitle">
-                    Suds on the Square Merchandise <br></br>
-                    proceeds going to help our charities
-                    </h3>
-                    <div className="logo-container">
-                        <h2>Barware</h2>
-                        <h2><span className="pipes">i</span></h2>
-                        <h2>Tees</h2>
-                        <h2><span className="pipes">i</span></h2>
-                        <h2>Throws</h2>
-                    </div>
-                    <div style={{display:'flex', justifyContent: 'center', paddingLeft: 50}}>
-                        <img src={brewTab} style={{width:275}}/>
-                        <img src={bottleOpenerTab} style={{width:275, marginLeft:'-50px'}}/>
-                    </div>
-                    {/* <div className={"paper " + (this.state.open ? "paper-open" : "")}>
-                        <div className="mobile-menu-text">
-                            <Link to="/brews">BREWS</Link>
-                            <Link>TUNES</Link>
-                            <Link>PIX</Link>
-                            <Link>SWAG</Link>
-                            <Link to="/facts">FACTS</Link>
-                            <Link>TIX</Link>
+                    <div className="body">
+                        <div className="brews-header">
+                            <img src={dog} className="beer" />
+                            <h1 className="brews-title">SWAG</h1>
                         </div>
-                    </div> */}
-                </div>  
-            </div>
+                        <h3 className="brews-subtitle">
+                        Suds on the Square Merchandise <br></br>
+                        proceeds going to help our charities
+                        </h3>
+                        <div className="logo-container">
+                            <h2>Barware</h2>
+                            <h2><span className="pipes">i</span></h2>
+                            <h2>Tees</h2>
+                            <h2><span className="pipes">i</span></h2>
+                            <h2>Throws</h2>
+                        </div>
+                        <div className="swag-tab-container">
+                            <img src={brewTab} className="swag-tab" id="brew-tab" onClick={this.openMenu} />
+                            <img src={bottleOpenerTab} className="swag-tab" id="bottle-opener-tab" onClick={this.openMenu} />
+                        </div>
+                    </div>  
+                </div>
+                {/* 
+                    ******* Modal *******
+                */}
+                <div className={"swag-modal " + (this.state.open ? "swag-modal-open" : "")}>
+                    <div style={{
+                        position: 'absolute', 
+                        top: `calc(50% - ${bottleOpenerWidth / 2}px)`, 
+                        left: `calc(50% - ${bottleOpenerHeight / 2}px)`
+                    }} 
+                    >
+                        <div onClick={this.openMenu}>
+                        X
+                        </div>
+                        <img src={bottleOpener} />
+                    </div>
+                </div>
+            </>
         )
     }
 }

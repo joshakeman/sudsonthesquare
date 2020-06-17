@@ -448,3 +448,28 @@ img.bg {
   .slick-dots {
       color: white;
   }
+
+  /* Swag components */
+
+.swag-tab-container {
+    display:'flex'; 
+    justify-content: 'center'; 
+    padding-left: 50px ;
+}
+
+.swag-tab-container img:not(:first-child) {
+    margin-left: -50px;
+}
+
+.swag-tab {
+    width: 275px;
+    cursor: pointer;
+}
+
+.swag-modal {
+    display: none;
+}
+
+.swag-modal-open {
+    display: block !important;
+}
