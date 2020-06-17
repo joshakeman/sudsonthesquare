@@ -473,3 +473,11 @@ img.bg {
 .swag-modal-open {
     display: block !important;
 }
+
+.swag-modal-close-button {
+    width: 50px; 
+    position: 'absolute'; 
+    top: -40px; 
+    left: 0; 
+    cursor: 'pointer';
+}
