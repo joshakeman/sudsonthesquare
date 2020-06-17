@@ -5,6 +5,7 @@ import dog from '../images/dog.png'
 import bottleOpenerTab from '../images/bottle-opener-tab.png'
 import brewTab from '../images/brew-tab.png'
 import bottleOpener from '../images/bottle-opener.png'
+import closeIcon from '../images/close-icon.png'
 
 import menuButton from '../images/menu-button.png'
 import '../styles/home.css'
@@ -65,13 +66,11 @@ class Swag extends React.Component {
                 <div className={"swag-modal " + (this.state.open ? "swag-modal-open" : "")}>
                     <div style={{
                         position: 'absolute', 
-                        top: `calc(50% - ${bottleOpenerWidth / 2}px)`, 
-                        left: `calc(50% - ${bottleOpenerHeight / 2}px)`
+                        top: `calc(50% - ${bottleOpenerHeight / 2.5}px)`, 
+                        left: `calc(50% - ${bottleOpenerWidth / 2}px)`
                     }} 
                     >
-                        <div onClick={this.openMenu}>
-                        X
-                        </div>
+                        <img onClick={this.openMenu} src={closeIcon} style={{width:50, position: 'absolute', top: '-40px', left: 0, cursor: 'pointer'}} />
                         <img src={bottleOpener} />
                     </div>
                 </div>
