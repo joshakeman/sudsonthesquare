@@ -39,7 +39,7 @@ const IndexPage = () => {
             showMenu ? (
               <div className="menu-text">
               <Link to="/brews">BREWS</Link>
-              <Link>TUNES</Link>
+              <Link to="/tunes">TUNES</Link>
               <Link to="/pix">PIX</Link>
               <Link to="/swag">SWAG</Link>
               <Link to="/facts">FACTS</Link>

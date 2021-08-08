@@ -24,38 +24,58 @@ function SamplePrevArrow(props) {
 class SimpleSlider extends React.Component {
     render() {
       var settings = {
-        className: "slider-wrap",
-        centerMode: true,
-        infinite: true,
-        centerPadding: "60px",
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows: true,
-        // autoplay: false,
-        // autoplaySpeed: 2000,
-        // infinite: true
+        adaptiveHeight: true,
+        // dots: true,
+        responsive: [
+          {
+            breakpoint: 1412,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              // infinite: true,
+            }
+          },
+          {
+            breakpoint: 964,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       };
       return (
-        <Slider {...settings}>
-          <div>
-            <img src={suds1} className="slide-images"/>
-          </div>
-          <div>
-            <img src={suds2} className="slide-images"/>
-          </div>
-          <div>
-            <img src={suds3} className="slide-images"/>
-          </div>
-          <div>
-            <img src={suds4} className="slide-images"/>
-          </div>
-          <div>
-            <img src={suds5} className="slide-images"/>
-          </div>
-          <div>
-            <img src={suds6} className="slide-images"/>
-          </div>
-        </Slider>
+        <div className="slider-container">
+          <Slider {...settings}>
+            <div>
+              <img src={suds1} className="slide-images"/>
+            </div>
+            <div>
+              <img src={suds2} className="slide-images"/>
+            </div>
+            <div>
+              <img src={suds3} className="slide-images"/>
+            </div>
+            <div>
+              <img src={suds4} className="slide-images"/>
+            </div>
+            <div>
+              <img src={suds5} className="slide-images"/>
+            </div>
+            <div>
+              <img src={suds6} className="slide-images"/>
+            </div>
+          </Slider>
+        </div>
       );
     }
   }

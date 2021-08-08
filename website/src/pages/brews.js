@@ -64,14 +64,14 @@ class Brews extends React.Component {
                         <img src={jailhouse} />
                     </div>
                     <div className={"menu-paper " + (this.state.open ? "menu-paper-open" : "")}>
-                        <div className="mobile-menu-text">
+                        {/* <div className="mobile-menu-text">
                             <Link to="/brews">BREWS</Link>
                             <Link>TUNES</Link>
                             <Link>PIX</Link>
                             <Link>SWAG</Link>
                             <Link to="/facts">FACTS</Link>
                             <Link>TIX</Link>
-                        </div>
+                        </div> */}
                     </div>
                 </div>  
             </div>
