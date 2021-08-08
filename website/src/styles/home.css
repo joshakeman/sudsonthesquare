@@ -507,3 +507,58 @@ img.bg {
 .flighted {
     top: -80px;
 }
+
+.flight-btn {
+    width: 100%;
+    height: 60px;
+    opacity: 0.6;
+}
+
+.tix-flight-btn {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    opacity: 0.6;
+    background-color: red;
+    bottom: 40;
+}
+.pix-flight-btn {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    opacity: 0.6;
+    background-color: yellow;
+    bottom: 100;
+}
+.tunes-flight-btn {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    opacity: 0.6;
+    background-color: green;
+    bottom: 160;
+}
+.brews-flight-btn {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    opacity: 0.6;
+    background-color: blue;
+    bottom: 220;
+}
+.swag-flight-btn {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    opacity: 0.6;
+    background-color: orange;
+    bottom: 280;
+}
+.facts-flight-btn {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    opacity: 0.6;
+    background-color: purple;
+    bottom: 340;
+}
