@@ -198,6 +198,8 @@ img.bg {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 .facts-title {
     font-size: 96px;
@@ -348,6 +350,9 @@ img.bg {
 /* 
   ~~~~SLIDER~~~~
   */
+  .slick-slider {
+    max-width: 90%;
+  }
 
   .slide-images {
     width: 400px;
@@ -360,5 +365,5 @@ img.bg {
   }
   
   .slider-wrap {
-      margin-top: 80px;
+      margin-top: 40px;
   }
