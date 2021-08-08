@@ -9,6 +9,7 @@ import Img from "gatsby-image"
 import brickwall from '../images/brickwall.jpg'
 import background from '../images/paper-only-background.png'
 import menuButton from '../images/menu-button.png'
+import FlightMenu from '../components/flightMenu'
 import '../styles/home.css'
 
 const IndexPage = () => {
@@ -34,19 +35,7 @@ const IndexPage = () => {
           <img className="paper" src={background}></img>
           {/* <Img className="paper" fluid={data.background.childImageSharp.fluid} /> */}
           <img className="menu-button" src={menuButton}  onClick={() => toggleMenu(!showMenu)}></img>
-
-          {
-            showMenu ? (
-              <div className="menu-text">
-              <Link to="/brews">BREWS</Link>
-              <Link to="/tunes">TUNES</Link>
-              <Link to="/pix">PIX</Link>
-              <Link to="/swag">SWAG</Link>
-              <Link to="/facts">FACTS</Link>
-              <Link>TIX</Link>
-              </div>
-            ) : null
-          }
+          <FlightMenu open={showMenu} />
         </div>
       </div>
     </>

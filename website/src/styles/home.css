@@ -486,3 +486,24 @@ img.bg {
     left: 0; 
     cursor: 'pointer';
 }
+
+.flight-menu {
+    position: absolute;
+    left: 10%;
+    width: 215px;
+    top: -800px;
+
+    transition:         top 2.0s ease;
+    -moz-transition:    top 2.0s ease;
+    -ms-transition:     top 2.0s ease;
+    -o-transition:      top 2.0s ease;
+    -webkit-transition: top 2.0s ease;
+}
+
+.flight-menu > img {
+    width: 100%;
+}
+
+.flighted {
+    top: -80px;
+}
