@@ -14,7 +14,7 @@ export default function flightMenu({ open }) {
             ) : (
                 <div className="flight-menu flighted">
                     <img src={flight} />
-                    <Link to="/">
+                    {/* <Link to="/">
                         <div id="tix-flight-btn" style={{backgroundColor:'red', width:"100%", position:'absolute', bottom: 40, height: 60, opacity: 0.6}} />
                     </Link>
                     <Link to="/pix">
@@ -31,7 +31,7 @@ export default function flightMenu({ open }) {
                     </Link>
                     <Link to="/facts">
                         <div to="/facts" id="facts-flight-btn" style={{backgroundColor:'purple', width:"100%", position:'absolute', bottom: 340, height: 60, opacity: 0.6}} />
-                    </Link>
+                    </Link> */}
                 </div>
             )
         }

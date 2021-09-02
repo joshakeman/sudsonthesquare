@@ -39,9 +39,12 @@
 }
 
 div.paper-wrapper{
-    width: 66%;
+    background: url('../images/home_paper.png') no-repeat;
+    width: 750px;
+    height: 591px;
     margin: 20px auto;
     position: relative;
+    padding: 20px;
 }
 
 @media (max-width: 1208px) {
@@ -70,6 +73,60 @@ img.paper {
     img.paper {
         width: 700px;
     }
+}
+
+.paper-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    position: relative;
+}
+
+.main-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-logo {
+    width: 70%;
+    margin-bottom: 0;
+}
+
+.kiwanis-logo {
+    width: 75px;
+    margin: 0;
+}
+
+.mainstreet-logo {
+    width: 75px;
+    margin: 0;
+}
+
+.dog-logo {
+    width: 175px;
+    margin: 0;
+}
+
+.spider {
+    width: 90px;
+    position: absolute;
+    top: -100px;
+    right: 15%;
+    animation-name: spider-drop;
+    animation-duration: 3s;
+}
+
+@keyframes spider-drop {
+    0% {
+      top: -300px;
+    }
+  }
+
+.paper-right {
+    width: 50%;
 }
 
 .menu-button {
