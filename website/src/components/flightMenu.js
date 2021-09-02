@@ -1,5 +1,5 @@
 import React from 'react'
-import flight from '../images/flight-2.png'
+import flight from '../images/flight-menu.png'
 import { Link } from "gatsby"
 
 export default function flightMenu({ open }) {
@@ -8,11 +8,11 @@ export default function flightMenu({ open }) {
         <>
         {
             open ? (
-                <div className="flight-menu">
+                <div className="flight-menu flighted">
                     <img src={flight} />
                 </div>
             ) : (
-                <div className="flight-menu flighted">
+                <div className="flight-menu">
                     <img src={flight} />
                     {/* <Link to="/">
                         <div id="tix-flight-btn" style={{backgroundColor:'red', width:"100%", position:'absolute', bottom: 40, height: 60, opacity: 0.6}} />

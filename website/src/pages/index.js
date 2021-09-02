@@ -8,13 +8,14 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 import brickwall from '../images/brickwall.jpg'
 import background from '../images/paper-only-background.png'
-import menuButton from '../images/menu-button.png'
+import menuButton from '../images/menu-buton.png'
 import mainLogo from '../images/mainLogo.png'
 import timeDate from '../images/time_date.png'
 import kiwanis from '../images/kiwanis-logo.png'
 import mainstreet from '../images/k_logo.png'
 import dog from '../images/dog.png'
 import spider from '../images/spider.png'
+import bike from '../images/first-page-bike.png'
 import FlightMenu from '../components/flightMenu'
 import '../styles/home.css'
 
@@ -51,11 +52,12 @@ const IndexPage = () => {
             <img className="spider" src={spider} />
           </div>
           <div className="paper-right">
-            
+            <img className="menu-button" src={menuButton} onClick={() => toggleMenu(!showMenu)} />
+            <img className="bike" src={bike} />
           </div>
           {/* <img className="paper" src={background}></img> */}
-          <img className="menu-button" src={menuButton}  onClick={() => toggleMenu(!showMenu)}></img>
-          {/* <FlightMenu open={showMenu} /> */}
+          {/* <img className="menu-button" src={menuButton}  onClick={() => toggleMenu(!showMenu)}></img> */}
+          <FlightMenu open={showMenu} />
         </div>
       </div>
     </>

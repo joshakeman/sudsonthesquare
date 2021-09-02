@@ -45,6 +45,7 @@ div.paper-wrapper{
     margin: 20px auto;
     position: relative;
     padding: 20px;
+    display: flex;
 }
 
 @media (max-width: 1208px) {
@@ -127,15 +128,37 @@ img.paper {
 
 .paper-right {
     width: 50%;
+    position: relative;
 }
 
 .menu-button {
-    width: 13%;
+    width: 100px;
     position: absolute;
-    top: 5%;
-    right: 25%;
+    top: -24px;
+    left: 30px;
+    animation-name: menu-drop;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
     cursor: pointer;
-    z-index: 100;
+}
+
+@keyframes menu-drop {
+    0% {
+      top: -380px;
+      opacity: 1;
+    }
+    100% {
+        opacity: 1;
+      }
+  }
+
+.bike {
+    width: 300px;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
 }
 
 .menu-text {
@@ -546,15 +569,14 @@ img.bg {
 
 .flight-menu {
     position: absolute;
-    left: 10%;
-    width: 215px;
-    top: -800px;
+    left: 1500px;
+    width: 400px;
 
-    transition:         top 2.0s ease;
-    -moz-transition:    top 2.0s ease;
-    -ms-transition:     top 2.0s ease;
-    -o-transition:      top 2.0s ease;
-    -webkit-transition: top 2.0s ease;
+    transition:         left 2.0s ease;
+    -moz-transition:    left 2.0s ease;
+    -ms-transition:     left 2.0s ease;
+    -o-transition:      left 2.0s ease;
+    -webkit-transition: left 2.0s ease;
 }
 
 .flight-menu > img {
@@ -562,7 +584,7 @@ img.bg {
 }
 
 .flighted {
-    top: -80px;
+    left: 350px;
 }
 
 .flight-btn {
