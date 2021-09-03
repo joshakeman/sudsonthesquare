@@ -1,5 +1,5 @@
 import React from 'react'
-import bottles from '../images/bottles.png'
+import mustache from '../images/mustache.png'
 
 import contact from '../images/contact.png'
 import faq from '../images/faq.png'
@@ -26,19 +26,17 @@ export default function pix() {
             <div className="mobile-menu-button-wrapper">
                 <img className="mobile-menu-button" src={menuButton} onClick={openMenu} />
             </div>
-            <div className="body">
                 <div className="facts-header">
                     <div className="logo-wrapper">
                         <h1 className="facts-title">PIX</h1>
-                        <img src={bottles} className="beer" />
+                        <img src={mustache} className="mustache" />
                     </div>
                     <h3 className="pix-subtitle">
-                        With pinewood studios just down the road, <br></br>
+                        With Trilith studios just down the road, <br></br>
                         it's not impossible a fimiliar face <br></br>
                         might just show up unannounced
                     </h3>
                 </div>
-            </div>
             <Slider />
         </div>
     )

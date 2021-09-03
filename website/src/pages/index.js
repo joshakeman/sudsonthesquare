@@ -38,6 +38,7 @@ const IndexPage = () => {
     <>
       <SEO title="Home" />
       <div className="background">
+        {/* Desktop paper */}
         <div className="paper-wrapper">
           <div className="paper-left">
             <div className="main-logo-wrapper">
@@ -58,6 +59,11 @@ const IndexPage = () => {
           {/* <img className="paper" src={background}></img> */}
           {/* <img className="menu-button" src={menuButton}  onClick={() => toggleMenu(!showMenu)}></img> */}
           <FlightMenu open={showMenu} />
+        </div>
+
+        {/* Mobile Paper */}
+        <div className="mobile-paper-wrapper">
+
         </div>
       </div>
     </>
