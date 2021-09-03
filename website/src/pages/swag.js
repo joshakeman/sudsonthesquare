@@ -35,10 +35,9 @@ class Swag extends React.Component {
         return (
             <>
                 <div className="brews-background">
-                    <div className="mobile-menu-button-wrapper">
+                    {/* <div className="mobile-menu-button-wrapper">
                         <img className="mobile-menu-button" src={menuButton} onClick={this.openMenu} />
-                    </div>
-                    <div className="body">
+                    </div> */}
                         <div className="brews-header">
                             <img src={dog} className="beer" />
                             <h1 className="brews-title">SWAG</h1>
@@ -47,18 +46,19 @@ class Swag extends React.Component {
                         Suds on the Square Merchandise <br></br>
                         proceeds going to help our charities
                         </h3>
-                        <div className="logo-container">
-                            <h2>Barware</h2>
-                            <h2><span className="pipes">i</span></h2>
-                            <h2>Tees</h2>
-                            <h2><span className="pipes">i</span></h2>
-                            <h2>Throws</h2>
+                        <div className="swag-content-wrapper">
+                            <div className="swag-headers">
+                                <h2>Barware</h2>
+                                <h2><span className="pipes">i</span></h2>
+                                <h2>Tees</h2>
+                                <h2><span className="pipes">i</span></h2>
+                                <h2>Throws</h2>
+                            </div>
+                            <div className="swag-tab-container">
+                                <img src={brewTab} className="swag-tab" id="brew-tab" onClick={this.openMenu} />
+                                <img src={bottleOpenerTab} className="swag-tab" id="bottle-opener-tab" onClick={this.openMenu} />
+                            </div>
                         </div>
-                        <div className="swag-tab-container">
-                            <img src={brewTab} className="swag-tab" id="brew-tab" onClick={this.openMenu} />
-                            <img src={bottleOpenerTab} className="swag-tab" id="bottle-opener-tab" onClick={this.openMenu} />
-                        </div>
-                    </div>  
                 </div>
                 {/* 
                     ******* Modal *******
