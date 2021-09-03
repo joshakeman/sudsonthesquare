@@ -44,36 +44,40 @@ class Brews extends React.Component {
         const { abita, wildleap, jailhouse } = this.state
         return (
             <div className="brews-background">
-                <div className="mobile-menu-button-wrapper">
+                {/* <div className="mobile-menu-button-wrapper">
                     <img className="mobile-menu-button" src={menuButton} onClick={this.openMenu} />
+                </div> */}
+                <div className="brews-header">
+                    <img src={beer} className="beer" />
+                    <h1 className="brews-title">BREWS</h1>
                 </div>
-                <div className="body">
-                    <div className="brews-header">
-                        <img src={beer} className="beer" />
-                        <h1 className="brews-title">BREWS</h1>
-                    </div>
-                    <h3 className="brews-subtitle">
-                    a selection of the breweries <br></br>
-                    that will be serving up their <br></br>
-                    amazing concoctions
-                    </h3>
-                    <div className="logo-container">
-                        <img src={abita} 
-                            />
-                        <img src={wildleap} />
-                        <img src={jailhouse} />
-                    </div>
-                    <div className={"menu-paper " + (this.state.open ? "menu-paper-open" : "")}>
-                        {/* <div className="mobile-menu-text">
-                            <Link to="/brews">BREWS</Link>
-                            <Link>TUNES</Link>
-                            <Link>PIX</Link>
-                            <Link>SWAG</Link>
-                            <Link to="/facts">FACTS</Link>
-                            <Link>TIX</Link>
-                        </div> */}
-                    </div>
-                </div>  
+                <h3 className="brews-subtitle">
+                a selection of the breweries <br></br>
+                that will be serving up their <br></br>
+                amazing concoctions
+                </h3>
+                <div className="logo-container">
+                    <img src={abita} />
+                    <img src={wildleap} />
+                    <img src={jailhouse} />
+                    <img src={abita} />
+                    <img src={wildleap} />
+                    <img src={jailhouse} />
+                    <img src={abita} />
+                    <img src={wildleap} />
+                    <img src={jailhouse} />
+                </div>
+
+                <div className={"menu-paper " + (this.state.open ? "menu-paper-open" : "")}>
+                    {/* <div className="mobile-menu-text">
+                        <Link to="/brews">BREWS</Link>
+                        <Link>TUNES</Link>
+                        <Link>PIX</Link>
+                        <Link>SWAG</Link>
+                        <Link to="/facts">FACTS</Link>
+                        <Link>TIX</Link>
+                    </div> */}
+                </div>
             </div>
         )
     }

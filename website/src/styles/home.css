@@ -261,7 +261,7 @@ img.bg {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin: 20px 0;
 }
 
 .brews-header > img {
@@ -284,6 +284,14 @@ img.bg {
     justify-content: space-around;
     align-items: center;
     margin-top: 60px;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.logo-container > img {
+    width: 27%;
 }
 
 .logo-container > h2 {
@@ -298,10 +306,6 @@ img.bg {
     font-weight: 100;
     font-family: 'vtks_distressregular';
     color: #503626;
-}
-
-.logo-container > img {
-    width: 21%;
 }
 
 /* 
@@ -320,7 +324,6 @@ img.bg {
     flex-direction: column;
     min-height: 100vh;
     align-items: center;
-    justify-content: center;
 }
 .facts-title {
     font-size: 96px;
@@ -472,8 +475,21 @@ img.bg {
   ~~~~TUNES~~~~
   */
 
+.tunes-background {
+    background: url('../images/long-bricks.jpg') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .tunes-title {
-    font-size: 86px;
+    font-size: 76px;
     font-weight: normal;
     margin: 0;
     font-family: 'vtks_distressregular';
@@ -484,17 +500,35 @@ img.bg {
 }
 
 .tunes-subtitle {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: normal;
     font-family: 'vtks_distressregular';
     color: #bba88b;
     text-align: center;
     letter-spacing: 0.2em;
     line-height: 1.25;
+    margin-top: 10px;
+}
+
+.tunes-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.facts-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0;
 }
 
 #guitar {
     max-width: 260px;
+    margin: 0;
 }
 
 .tunes-content {
