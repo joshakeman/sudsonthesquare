@@ -594,7 +594,7 @@ img.bg {
   /* Swag components */
 
 .swag-content-wrapper {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -612,21 +612,53 @@ img.bg {
     font-weight: normal;
     font-family: 'vtks_distressregular';
     color: #503626;
+    cursor: pointer;
 }
 
 .swag-tab-container {
-    display:'flex'; 
-    justify-content: 'center'; 
-    padding-left: 50px ;
+    display: flex; 
+    justify-content: center; 
 }
 
 .swag-tab-container img:not(:first-child) {
     margin-left: -50px;
 }
 
+.swag-tab-wrapper {
+    width: 275px;
+    height: 275px;
+    margin-left: -40px;
+    display: flex;
+    justify-content: center;
+    background-size: contain !important;
+}
+
+.swag-tab-wrapper:nth-child(odd) {
+    z-index: 20;
+}
+.swag-tab-wrapper:nth-child(even) {
+    z-index: 10;
+}
+
 .swag-tab {
     width: 275px;
     cursor: pointer;
+}
+
+.swag-tab-btn {
+    width: 140px;
+    height: 100%;
+    opacity: 0.6;
+    color: red;
+    cursor: pointer;
+}
+
+#brew-tab {
+    background: url('../images/brew-tab.png')
+}
+
+#bottle-opener-tab {
+    background: url('../images/bottle-opener-tab.png')
 }
 
 .swag-modal {

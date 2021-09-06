@@ -16,28 +16,48 @@ class Swag extends React.Component {
         super(props)
 
         this.state={
-            open: false
+            open: false,
+            swagCategory: ''
         }
     }
-
 
     openMenu = () => {
         this.setState({
             open: !this.state.open
         })
     }
+
+    setCategory = (cat) => {
+        this.setState({
+            swagCategory: cat
+        })
+    }
    
 
     render() {
-        const { abita, wildleap, jailhouse } = this.state
+        const { abita, wildleap, jailhouse, swagCategory } = this.state
         const bottleOpenerWidth = 500
         const bottleOpenerHeight = 809
+
+        let swagTray
+
+        if (swagCategory === 'barware') {
+            swagTray =  <>
+                        <div className="swag-tab-wrapper" id="brew-tab">
+                            <div className="swag-tab-btn" onClick={this.openMenu} />
+                        </div>
+                        <div className="swag-tab-wrapper" id="bottle-opener-tab">
+                            <div className="swag-tab-btn" onClick={this.openMenu} />
+                        </div>
+                        </>
+        }
         return (
             <>
                 <div className="brews-background">
                     {/* <div className="mobile-menu-button-wrapper">
                         <img className="mobile-menu-button" src={menuButton} onClick={this.openMenu} />
                     </div> */}
+                    <div className="swag-content-wrapper">
                         <div className="brews-header">
                             <img src={dog} className="beer" />
                             <h1 className="brews-title">SWAG</h1>
@@ -46,19 +66,18 @@ class Swag extends React.Component {
                         Suds on the Square Merchandise <br></br>
                         proceeds going to help our charities
                         </h3>
-                        <div className="swag-content-wrapper">
-                            <div className="swag-headers">
-                                <h2>Barware</h2>
-                                <h2><span className="pipes">i</span></h2>
-                                <h2>Tees</h2>
-                                <h2><span className="pipes">i</span></h2>
-                                <h2>Throws</h2>
-                            </div>
-                            <div className="swag-tab-container">
-                                <img src={brewTab} className="swag-tab" id="brew-tab" onClick={this.openMenu} />
-                                <img src={bottleOpenerTab} className="swag-tab" id="bottle-opener-tab" onClick={this.openMenu} />
-                            </div>
+                        <div className="swag-headers">
+                            <h2 onClick={()=>this.setCategory('barware')}>Barware</h2>
+                            <h2><span className="pipes">i</span></h2>
+                            <h2>Tees</h2>
+                            <h2><span className="pipes">i</span></h2>
+                            <h2>Throws</h2>
                         </div>
+                        <div className="swag-tab-container">
+                            {swagTray}
+                            {/* <img src={bottleOpenerTab} className="swag-tab" id="bottle-opener-tab" onClick={this.openMenu} /> */}
+                        </div>
+                    </div>
                 </div>
                 {/* 
                     ******* Modal *******
