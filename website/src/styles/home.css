@@ -22,6 +22,12 @@
     font-style: normal;
 }
 
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
 .background {
     background: url('../images/brickwall-optimized.jpg') no-repeat center center fixed;
     /* background: url('../images/cement.jpg') no-repeat center center fixed;  */

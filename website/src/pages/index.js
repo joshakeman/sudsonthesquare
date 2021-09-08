@@ -19,6 +19,8 @@ import bike from '../images/first-page-bike.png'
 import FlightMenu from '../components/flightMenu'
 import '../styles/home.css'
 
+import Helmet from "react-helmet"
+
 const IndexPage = () => {
 
   const data = useStaticQuery(graphql`
@@ -63,7 +65,19 @@ const IndexPage = () => {
 
         {/* Mobile Paper */}
         <div className="mobile-paper-wrapper">
+<<<<<<< Updated upstream
 
+=======
+            <img className="mobile-main-logo" src={mainLogo} />
+            <img className="mobile-main-logo" src={timeDate} />
+            <div className="mobile-footer">
+              <img className="mobile-kiwanis-logo" src={kiwanis} />
+              <img className="mobile-bike" src={bike} />
+              <img className="mobile-mainstreet-logo" src={mainstreet} />
+            </div>
+            <img className="mobile-spider" src={mobileSpider} onClick={() => toggleMobileMenu(!showMobileMenu)}/>
+            <MobileFlightMenu open={showMobileMenu} />
+>>>>>>> Stashed changes
         </div>
       </div>
     </>
