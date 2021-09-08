@@ -38,6 +38,12 @@
     overflow-x: hidden;
 }
 
+@media (max-width: 701px) {
+    .background {
+        background: none;
+    }
+}
+
 div.paper-wrapper{
     background: url('../images/first-page-paper-850.png') no-repeat;
     background-size: contain;
@@ -85,18 +91,47 @@ img.paper {
 }
 
 .mobile-paper-wrapper {
-    background: url('../images/mobile_paperbrick.png') no-repeat;
+    background: url('../images/paperbrick_wall.jpg') no-repeat;
     background-size: cover;
-    width: 400px;
-    height: 591px;
+    width: 700px;
+    height: 2000px;
     position: relative;
-    display: flex;
+    display: none;
+    background-position-y: 7%;
 }
 
-@media (min-width: 750px) {
+@media (max-width: 700px) {
     .mobile-paper-wrapper {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 36%;
     }
+}
+
+.mobile-main-logo {
+    width: 70%;
+    margin-bottom: 0;
+}
+
+.mobile-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-bike {
+    width: 30%;
+}
+
+.mobile-kiwanis-logo {
+    width: 12%;
+    align-self: center;
+}
+
+.mobile-mainstreet-logo {
+    width: 12%;
+    align-self: center;
 }
 
 .paper-left {
@@ -148,6 +183,23 @@ img.paper {
 }
 
 @keyframes spider-drop {
+    0% {
+      top: -300px;
+    }
+  }
+
+.mobile-spider {
+    width: 28%;
+    position: absolute;
+    top: -12%;
+    right: 15%;
+    cursor: pointer;
+    z-index: 10;
+    animation-name: mobile-spider-drop;
+    animation-duration: 3s;
+}
+
+@keyframes mobile-spider-drop {
     0% {
       top: -300px;
     }

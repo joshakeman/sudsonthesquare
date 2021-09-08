@@ -15,6 +15,7 @@ import kiwanis from '../images/kiwanis-logo.png'
 import mainstreet from '../images/k_logo.png'
 import dog from '../images/dog.png'
 import spider from '../images/spider.png'
+import mobileSpider from '../images/mobile-spider.png'
 import bike from '../images/first-page-bike.png'
 import FlightMenu from '../components/flightMenu'
 import '../styles/home.css'
@@ -63,7 +64,14 @@ const IndexPage = () => {
 
         {/* Mobile Paper */}
         <div className="mobile-paper-wrapper">
-
+            <img className="mobile-main-logo" src={mainLogo} />
+            <img className="mobile-main-logo" src={timeDate} />
+            <div className="mobile-footer">
+              <img className="mobile-kiwanis-logo" src={kiwanis} />
+              <img className="mobile-bike" src={bike} />
+              <img className="mobile-mainstreet-logo" src={mainstreet} />
+            </div>
+            <img className="mobile-spider" src={mobileSpider} />
         </div>
       </div>
     </>
