@@ -205,6 +205,38 @@ img.paper {
     }
   }
 
+@media (max-width: 650px) {
+    .mobile-spider {
+        width: 26%;
+        top: -8%;
+        right: 15%;
+    }
+}
+@media (max-width: 570px) {
+    .mobile-spider {
+        width: 24%;
+        top: -6%;
+        right: 17%;
+    }
+}
+@media (max-width: 535px) {
+    .mobile-spider {
+        width: 22%;
+        top: -4%;
+        right: 18%;
+    }
+}
+@media (max-width: 450px) {
+    .mobile-spider {
+        width: 20%;
+        top: -2%;
+        right: 20%;
+    }
+    .mobile-paper-wrapper {
+        background-position-y: -50px;
+    }
+}
+
 .paper-right {
     width: 50%;
     position: relative;
@@ -728,6 +760,30 @@ img.bg {
     left: 385px;
 }
 
+.mobile-flight-menu {
+    position: absolute;
+    top: 0;
+    left: 150%;
+    width: 75%;
+    height: 185px;
+    z-index: 20;
+    background: url('../images/flight-menu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+
+    transition:         left 2.0s ease;
+    -moz-transition:    left 2.0s ease;
+    -ms-transition:     left 2.0s ease;
+    -o-transition:      left 2.0s ease;
+    -webkit-transition: left 2.0s ease;
+}
+
+.mobile-flighted {
+    left: 13%;
+    top: 0;
+}
+
 .flight-btn {
     width: 45px;
     height: 100%;
@@ -736,6 +792,20 @@ img.bg {
 
 #tix-flight-btn {
     width: 60px;
+}
+@media (max-width: 701px) {
+    #tix-flight-btn {
+        width: 100%;
+    }
+    .flight-btn {
+        width: 100%;
+    }
+    #big-menu-link {
+        width: 13%;
+    }
+    .menu-link {
+        width: 10.5%;
+    }
 }
 .pix-flight-btn {
     position: absolute;

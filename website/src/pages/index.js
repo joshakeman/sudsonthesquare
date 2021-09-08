@@ -18,6 +18,7 @@ import spider from '../images/spider.png'
 import mobileSpider from '../images/mobile-spider.png'
 import bike from '../images/first-page-bike.png'
 import FlightMenu from '../components/flightMenu'
+import MobileFlightMenu from '../components/mobileFlightMenu'
 import '../styles/home.css'
 
 const IndexPage = () => {
@@ -34,6 +35,7 @@ const IndexPage = () => {
       }
     `)
   const [showMenu, toggleMenu] = useState(false);
+  const [showMobileMenu, toggleMobileMenu] = useState(false);
 
   return (
     <>
@@ -71,7 +73,9 @@ const IndexPage = () => {
               <img className="mobile-bike" src={bike} />
               <img className="mobile-mainstreet-logo" src={mainstreet} />
             </div>
-            <img className="mobile-spider" src={mobileSpider} />
+            <img className="mobile-spider" src={mobileSpider} onClick={() => toggleMobileMenu(!showMobileMenu)}/>
+
+            <MobileFlightMenu open={showMobileMenu} />
         </div>
       </div>
     </>
