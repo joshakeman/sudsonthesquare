@@ -15,8 +15,10 @@ import kiwanis from '../images/kiwanis-logo.png'
 import mainstreet from '../images/k_logo.png'
 import dog from '../images/dog.png'
 import spider from '../images/spider.png'
+import mobileSpider from '../images/mobile-spider.png'
 import bike from '../images/first-page-bike.png'
 import FlightMenu from '../components/flightMenu'
+import MobileFlightMenu from '../components/mobileFlightMenu'
 import '../styles/home.css'
 
 import Helmet from "react-helmet"
@@ -35,6 +37,7 @@ const IndexPage = () => {
       }
     `)
   const [showMenu, toggleMenu] = useState(false);
+  const [showMobileMenu, toggleMobileMenu] = useState(false);
 
   return (
     <>
@@ -65,9 +68,6 @@ const IndexPage = () => {
 
         {/* Mobile Paper */}
         <div className="mobile-paper-wrapper">
-<<<<<<< Updated upstream
-
-=======
             <img className="mobile-main-logo" src={mainLogo} />
             <img className="mobile-main-logo" src={timeDate} />
             <div className="mobile-footer">
@@ -76,8 +76,8 @@ const IndexPage = () => {
               <img className="mobile-mainstreet-logo" src={mainstreet} />
             </div>
             <img className="mobile-spider" src={mobileSpider} onClick={() => toggleMobileMenu(!showMobileMenu)}/>
+
             <MobileFlightMenu open={showMobileMenu} />
->>>>>>> Stashed changes
         </div>
       </div>
     </>
