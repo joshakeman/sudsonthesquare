@@ -76,7 +76,6 @@ const IndexPage = () => {
               <img className="mobile-mainstreet-logo" src={mainstreet} />
             </div>
             <img className="mobile-spider" src={mobileSpider} onClick={() => toggleMobileMenu(!showMobileMenu)}/>
-
             <MobileFlightMenu open={showMobileMenu} />
         </div>
       </div>
