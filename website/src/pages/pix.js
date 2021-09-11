@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import mustache from '../images/mustache.png'
 
 import contact from '../images/contact.png'
@@ -10,16 +10,13 @@ import sponsors from '../images/sponsors.png'
 
 import Gallery from '../components/gallery'
 
-import menuButton from '../images/menu-button.png'
+import menuButton from '../images/menu-buton.png'
 import '../styles/home.css'
 
-export default function pix() {
+export default function Pix() {
 
-    const openMenu = () => {
-        this.setState({
-            open: !this.state.open
-        })
-    }
+    const [showMenu, toggleMenu] = useState(false);
+    const [showMobileMenu, toggleMobileMenu] = useState(false);
 
     return (
         <div className="facts-background">
@@ -27,6 +24,8 @@ export default function pix() {
                 <img className="mobile-menu-button" src={menuButton} onClick={openMenu} />
             </div> */}
                 <div className="facts-header">
+                    <img className="mobile-menu-button-other" src={menuButton} onClick={() => toggleMenu(!showMenu)} />
+
                     <div className="logo-wrapper">
                         <h1 className="facts-title">PIX</h1>
                         <img src={mustache} className="mustache" />
