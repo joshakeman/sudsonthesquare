@@ -10,7 +10,7 @@ export default function mobileFlightMenu({ open }) {
             open ? (
                 <div className="mobile-flight-menu mobile-flighted">
                     {/* <img src={flight} /> */}
-                    <Link className="menu-link" id="big-menu-link" to="/">
+                    <Link className="menu-link" id="big-menu-link" to="https://www.eventbrite.com/e/suds-on-the-square-oktoberfest-tickets-168951395171">
                         <div id="tix-flight-btn" className="flight-btn" />
                     </Link>
                     <Link className="menu-link" to="/pix">

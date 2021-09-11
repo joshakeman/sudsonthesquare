@@ -8,7 +8,7 @@ import links from '../images/links.png'
 import map from '../images/map.png'
 import sponsors from '../images/sponsors.png'
 
-import Slider from '../components/Slider'
+import Gallery from '../components/gallery'
 
 import menuButton from '../images/menu-button.png'
 import '../styles/home.css'
@@ -23,9 +23,9 @@ export default function pix() {
 
     return (
         <div className="facts-background">
-            <div className="mobile-menu-button-wrapper">
+            {/* <div className="mobile-menu-button-wrapper">
                 <img className="mobile-menu-button" src={menuButton} onClick={openMenu} />
-            </div>
+            </div> */}
                 <div className="facts-header">
                     <div className="logo-wrapper">
                         <h1 className="facts-title">PIX</h1>
@@ -37,7 +37,7 @@ export default function pix() {
                         might just show up unannounced
                     </h3>
                 </div>
-            <Slider />
+            <Gallery />
         </div>
     )
 }
