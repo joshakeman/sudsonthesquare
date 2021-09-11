@@ -100,7 +100,7 @@ img.paper {
     background: url('../images/paperbrick_wall.jpg') no-repeat;
     background-size: cover;
     width: 700px;
-    height: 740px;
+    height: 1118px;
     position: relative;
     display: none;
     background-position-y: 7%;
@@ -111,13 +111,43 @@ img.paper {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 36%;
+        padding-top: 21%;
+    }
+}
+@media (max-width: 650px) {
+    .mobile-paper-wrapper {
+        height: 1032px;
+    }
+}
+@media (max-width: 550px) {
+    .mobile-paper-wrapper {
+        height: 904px;
+    }
+}
+@media (max-width: 500px) {
+    .mobile-paper-wrapper {
+        height: 811px;
     }
 }
 
-.mobile-main-logo {
+.mobile-logo-wrapper{
     width: 70%;
     margin-bottom: 0;
+    position: relative;
+}
+
+.mobile-main-logo {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.spider-mobile-button {
+    position: absolute;
+    width: 40%;
+    height: 120px;
+    top: 8%;
+    right: 2%;
+    cursor: pointer;
 }
 
 .mobile-footer {
@@ -779,7 +809,7 @@ img.bg {
     width: 460px;
     height: 185px;
     z-index: 20;
-    background: url('../images/flight-menu.png');
+    background: url('../images/flight-3-optimized.png');
     background-size: contain;
     display: flex;
 
@@ -805,7 +835,7 @@ img.bg {
     width: 75%;
     height: 185px;
     z-index: 20;
-    background: url('../images/flight-menu.png');
+    background: url('../images/flight-3-optimized.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;

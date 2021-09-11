@@ -10,6 +10,7 @@ import brickwall from '../images/brickwall.jpg'
 import background from '../images/paper-only-background.png'
 import menuButton from '../images/menu-buton.png'
 import mainLogo from '../images/mainLogo.png'
+import mainLogoMobile from '../images/mainLogoMobile.png'
 import timeDate from '../images/time_date.png'
 import kiwanis from '../images/kiwanis-logo.png'
 import mainstreet from '../images/k_logo.png'
@@ -68,14 +69,17 @@ const IndexPage = () => {
 
         {/* Mobile Paper */}
         <div className="mobile-paper-wrapper">
-            <img className="mobile-main-logo" src={mainLogo} />
-            <img className="mobile-main-logo" src={timeDate} />
+            <div className="mobile-logo-wrapper">
+              <img className="mobile-main-logo" src={mainLogoMobile} />
+              <img className="mobile-main-logo" src={timeDate} />
+              <div className="spider-mobile-button" onClick={() => toggleMobileMenu(!showMobileMenu)} />
+            </div>
             <div className="mobile-footer">
               <img className="mobile-kiwanis-logo" src={kiwanis} />
               <img className="mobile-bike" src={bike} />
               <img className="mobile-mainstreet-logo" src={mainstreet} />
             </div>
-            <img className="mobile-spider" src={mobileSpider} onClick={() => toggleMobileMenu(!showMobileMenu)}/>
+            {/* <img className="mobile-spider" src={mobileSpider} onClick={() => toggleMobileMenu(!showMobileMenu)}/> */}
             <MobileFlightMenu open={showMobileMenu} />
         </div>
       </div>
