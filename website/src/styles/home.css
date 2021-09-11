@@ -59,26 +59,21 @@ div.paper-wrapper{
     margin: 20px auto;
     position: relative;
     padding: 20px;
-    display: flex;
+    display: none;
 }
 
-/* @media (max-width: 1208px) {
+@media (min-width: 701px) {
     div.paper-wrapper{
+        display: flex;
+    }
+}
+
+@media (max-width: 900px) {
+    /* div.paper-wrapper{
         width: 88%;
-    }
+    } */
 }
 
-@media (max-width: 800px) {
-    div.paper-wrapper{
-        width: auto;
-    }
-} */
-
-@media (max-width: 751px) {
-    div.paper-wrapper{
-        display: none;
-    }
-}
 
 img.paper {
     width: 100%;
@@ -126,7 +121,7 @@ img.paper {
 }
 @media (max-width: 500px) {
     .mobile-paper-wrapper {
-        height: 811px;
+        height: 821px;
     }
 }
 
@@ -175,6 +170,7 @@ img.paper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding-top: 15px;
     position: relative;
 }
@@ -195,17 +191,17 @@ img.paper {
 }
 
 .kiwanis-logo {
-    width: 75px;
+    width: 22%;
     margin: 0;
 }
 
 .mainstreet-logo {
-    width: 75px;
+    width: 24%;
     margin: 0;
 }
 
 .dog-logo {
-    width: 175px;
+    width: 46%;
     margin: 0;
 }
 
@@ -216,6 +212,22 @@ img.paper {
     right: 15%;
     animation-name: spider-drop;
     animation-duration: 3s;
+}
+
+@media (max-width: 930px) {
+    .spider {
+        top: -85px;
+    }
+}
+@media (max-width: 850px) {
+    .spider {
+        top: -65px;
+    }
+}
+@media (max-width: 800px) {
+    .spider {
+        top: -42px;
+    }
 }
 
 @keyframes spider-drop {
@@ -303,11 +315,17 @@ img.paper {
   }
 
 .bike {
-    width: 330px;
+    width: 80%;
     position: absolute;
     bottom: -10px;
     right: 0;
     z-index: 0;
+}
+
+@media (max-width: 800px) {
+    .bike {
+        bottom: 20px;
+    }
 }
 
 .menu-text {
