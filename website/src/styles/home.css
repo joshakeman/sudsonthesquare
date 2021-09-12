@@ -738,6 +738,11 @@ img.bg {
     min-height: 100vh;
     align-items: center;
 }
+
+#cement-bg {
+    background: url('../images/cement_optimized.jpg') no-repeat center center fixed !important;
+}
+
 .facts-title {
     font-size: 96px;
     font-weight: normal;
@@ -747,6 +752,7 @@ img.bg {
     line-height: 1.25;
     color: #bba88b;
     text-align: center;
+    align-self: flex-end;
 }
 
 .facts-subtitle {
@@ -768,6 +774,15 @@ img.bg {
     margin: 100px 0 20px 0;
     padding: 10px;
     width: 564px;
+}
+
+.facts-page-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 574px;
 }
 
 @media screen and (max-width: 700px) {
@@ -808,6 +823,11 @@ img.bg {
     margin: 0;
 }
 
+.bottles {
+    width: 175px;
+    margin-bottom: 15px;
+}
+
 .logo-wrapper {
     display: flex;
     align-items: center;
@@ -815,45 +835,106 @@ img.bg {
 }
 
 .caps-container {
-    width: 100%;
+    width: 1000px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .bottle-cap {
     width: 125px;
 }
 /* comment */
-.contact-cap {
-    position: absolute;
-    position: absolute;
-    right: 26%;
+#sponsors-cap {
+    width: 195px;
+    height: 195px;
+    position: relative;
+    right: 54px;
 }
-.faq-cap {
-    position: absolute;
-    left: 6%;
-    top: 140px;
+#faq-cap {
+    width: 190px;
+    height: 190px;
+    margin-right: 8%;
+    position: relative;
+    top: 50px;
 }
-.hosts-cap {
-    position: absolute;
-    position: absolute;
-    left: 16%;
+#events-cap {
+    width: 235px;
+    height: 235px;
 }
-.links-cap {
-    position: absolute;
-    right: 36%;
-    top: 360px;
+#contact-cap {
+    width: 180px;
+    height: 180px;
+    margin-right: 115px
 }
-.map-cap {
-    position: absolute;
-    position: absolute;
-    top: 230px;
-    right: 26%;
+
+#hosts-cap {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 45px;
+    right: 35px;
 }
-.sponsors-cap {
-    position: absolute;
-    left: 30%;
-    top: 170px;
+#links-cap {
+    width: 170px;
+    height: 170px;
 }
+#map-cap {
+    width: 175px;
+    height: 175px;
+}
+
+@media screen and (max-width: 950px) {
+    #sponsors-cap {
+        width: 145px;
+        height: 145px;
+        position: relative;
+        right: 54px;
+    }
+    #faq-cap {
+        width: 130px;
+        height: 130px;
+        margin-right: 8%;
+        position: relative;
+        top: 50px;
+    }
+    #events-cap {
+        width: 175px;
+        height: 175px;
+    }
+    #contact-cap {
+        width: 120px;
+        height: 120px;
+        margin-right: 115px
+    }
+    
+    #hosts-cap {
+        width: 140px;
+        height: 140px;
+        position: relative;
+        bottom: 45px;
+        right: 35px;
+    }
+    #links-cap {
+        width: 110px;
+        height: 110px;
+    }
+    #map-cap {
+        width: 115px;
+        height: 115px;
+    }
+  }
+
+.caps-top-row {
+    display: flex;
+    justify-content: space-around;
+}
+.caps-bottom-row {
+    display: flex;
+}
+
 
 .gallery-wrapper {
     display: flex;

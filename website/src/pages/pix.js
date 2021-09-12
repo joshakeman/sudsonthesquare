@@ -24,8 +24,6 @@ export default function Pix() {
                 <img className="mobile-menu-button" src={menuButton} onClick={openMenu} />
             </div> */}
                 <div className="facts-header">
-                    <img className="mobile-menu-button-other" src={menuButton} onClick={() => toggleMenu(!showMenu)} />
-
                     <div className="logo-wrapper">
                         <h1 className="facts-title">PIX</h1>
                         <img src={mustache} className="mustache" />
