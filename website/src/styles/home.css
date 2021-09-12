@@ -596,6 +596,98 @@ img.bg {
     background: url('../images/brew-logos/wild_leap.png');
 }
 
+@media screen and (max-width: 700px) {
+    .brews-title {
+        font-size: 54px;
+    }
+    .brews-subtitle {
+        font-size: 14px;
+    }
+    .beer {
+        width: 115px;
+    }
+    .brews-header {
+        margin-bottom: 0;
+    }
+
+    #abide-logo {
+        width: 275px;
+        height: 206px;
+    }
+    #yeungling-logo {
+        width: 300px;
+        height: 171px;
+    }
+    #beacon-logo {
+        width: 275px;
+        height: 275px;
+    }
+    #cochran-logo {
+        width: 275px;
+        height: 275px;
+    }
+    #deschutes-logo {
+        width: 275px;
+        height: 275px;
+    }
+    #drycounty-logo {
+        width: 300px;
+        height: 217px;
+    }
+    #firemaker-logo {
+        width: 275px;
+        height: 212px;
+    }
+    #jekyll-logo {
+        background: url('../images/brew-logos/jekyll\ x.png');
+        width: 275px;
+        height: 206px;
+    }
+    #linecreek-logo {
+        width: 275px;
+        height: 275px;
+    }
+    #mckenzie-logo {
+        width: 275px;
+        height: 275px;
+    }
+    #mondaynight-logo {
+        width: 275px;
+        height: 296px;
+    }
+    #newbelgium-logo {
+        width: 275px;
+        height: 275px;
+    }
+    #redhare-logo {
+        background: url('../images/brew-logos/red\ hare\ x.png');
+        width: 300px;
+        height: 129px;
+    }
+    #stbc-logo {
+        background: url('../images/brew-logos/stbc_crest-logo\ x.png');
+        width: 275px;
+        height: 275px;
+    }
+    #wildleap-logo {
+        background: url('../images/brew-logos/wild_leap\ x.png');
+        width: 275px;
+        height: 275px;
+    }
+  }
+
+@media screen and (max-width: 375px) {
+    .brews-title {
+        font-size: 44px;
+    }
+    .brews-subtitle {
+        font-size: 12px;
+    }
+    .beer {
+        width: 90px;
+    }
+}
+
 .invisible-images {
     display: none;
 }

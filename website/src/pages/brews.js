@@ -26,7 +26,7 @@ import mondaynight from '../images/brew-logos/mondaynight.jpg'
 import newbelgium from '../images/brew-logos/nb-logo-best.png'
 import redhare from '../images/brew-logos/red\ hare.png'
 import stbc from '../images/brew-logos/stbc_crest-logo.png'
-import wildleap from '../images/brew-logos/wild_leap.png'
+import wildLeap from '../images/brew-logos/wild_leap.png'
 
 class Brews extends React.Component {
 
@@ -145,7 +145,7 @@ class Brews extends React.Component {
                 <img className="invisible-images" src={newbelgium} />
                 <img className="invisible-images" src={redhare} />
                 <img className="invisible-images" src={stbc} />
-                <img className="invisible-images" src={wildleap} />
+                <img className="invisible-images" src={wildLeap} />
             </div>
         )
     }
