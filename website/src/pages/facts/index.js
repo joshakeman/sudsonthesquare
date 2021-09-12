@@ -7,7 +7,7 @@ import events from '../../images/bottle-caps/events-cap.png'
 import hosts from '../../images/bottle-caps/HOSTS.png'
 import links from '../../images/bottle-caps/Links.png'
 import map from '../../images/bottle-caps/map.png'
-import sponsors from '../../images/bottle-caps/sponsors.png'
+import sponsors from '../../images/bottle-caps/SponsorS.png'
 
 import menuButton from '../../images/menu-button.png'
 import '../../styles/home.css'
