@@ -460,6 +460,146 @@ img.bg {
     line-height: 1.25;
 }
 
+.brew-logo-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brew-logo {
+    /* width: 200px;
+    height: 200px; */
+    cursor: pointer;
+    background-size: contain !important;
+    margin-bottom: 30px;
+}
+
+#abide-logo {
+    background: url('../images/brew-logos/abide\ x.png');
+    width: 400px;
+    height: 300px;
+}
+#abide-logo:hover {
+    background: url('../images/brew-logos/abide.png');
+}
+#yeungling-logo {
+    background: url('../images/brew-logos/1200px-Yuengling_logo.svg\ x.png');
+    width: 400px;
+    height: 228px;
+}
+#yeungling-logo:hover {
+    background: url('../images/brew-logos/1200px-Yuengling_logo.svg.png');
+}
+#beacon-logo {
+    background: url('../images/brew-logos/beacon\ x.png');
+    width: 300px;
+    height: 300px;
+}
+#beacon-logo:hover {
+    background: url('../images/brew-logos/beacon.jpg');
+}
+#cochran-logo {
+    background: url('../images/brew-logos/cochranmillbrewingcompany\ x.png');
+    width: 300px;
+    height: 300px;
+}
+#cochran-logo:hover {
+    background: url('../images/brew-logos/cochranmillbrewingcompany.png');
+}
+#deschutes-logo {
+    background: url('../images/brew-logos/DeschutesBreweryLogoRed\ x.png');
+    width: 300px;
+    height: 300px;
+}
+#deschutes-logo:hover {
+    background: url('../images/brew-logos/DeschutesBreweryLogoRed.png');
+}
+#drycounty-logo {
+    background: url('../images/brew-logos/drycounty\ x.png');
+    width: 360px;
+    height: 260px;
+}
+#drycounty-logo:hover {
+    background: url('../images/brew-logos/drycounty.png');
+}
+#firemaker-logo {
+    background: url('../images/brew-logos/firemaker\ x.png');
+    width: 350px;
+    height: 269px;
+}
+#firemaker-logo:hover {
+    background: url('../images/brew-logos/firemaker.png');
+}
+#jekyll-logo {
+    background: url('../images/brew-logos/jekyll\ x.png');
+    width: 360px;
+    height: 270px;
+}
+#jekyll-logo:hover {
+    background: url('../images/brew-logos/jekyll.png');
+}
+#linecreek-logo {
+    background: url('../images/brew-logos/line_creek_logo_512x512\ x.png');
+    width: 350px;
+    height: 350px;
+}
+#linecreek-logo:hover {
+    background: url('../images/brew-logos/line_creek_logo_512x512.png');
+}
+#mckenzie-logo {
+    background: url('../images/brew-logos/mckenzie\ x.png');
+    width: 350px;
+    height: 350px;
+}
+#mckenzie-logo:hover {
+    background: url('../images/brew-logos/mckenzie.png');
+}
+#mondaynight-logo {
+    background: url('../images/brew-logos/mondaynight\ x.png');
+    width: 350px;
+    height: 377px;
+}
+#mondaynight-logo:hover {
+    background: url('../images/brew-logos/mondaynight.jpg');
+}
+#newbelgium-logo {
+    background: url('../images/brew-logos/nb-logo-best\ x.png');
+    width: 350px;
+    height: 350px;
+}
+#newbelgium-logo:hover {
+    background: url('../images/brew-logos/nb-logo-best.png');
+}
+#redhare-logo {
+    background: url('../images/brew-logos/red\ hare\ x.png');
+    width: 360px;
+    height: 155px;
+}
+#redhare-logo:hover {
+    background: url('../images/brew-logos/red\ hare.png');
+}
+#stbc-logo {
+    background: url('../images/brew-logos/stbc_crest-logo\ x.png');
+    width: 350px;
+    height: 350px;
+}
+#stbc-logo:hover {
+    background: url('../images/brew-logos/stbc_crest-logo.png');
+}
+#wildleap-logo {
+    background: url('../images/brew-logos/wild_leap\ x.png');
+    width: 350px;
+    height: 350px;
+}
+#wildleap-logo:hover {
+    background: url('../images/brew-logos/wild_leap.png');
+}
+
+.invisible-images {
+    display: none;
+}
+
 .logo-container {
     display: flex;
     justify-content: space-around;
@@ -778,6 +918,10 @@ img.bg {
 
     .tunes-title {
         font-size: 62px;
+    }
+
+    .tunes-subtitle {
+        font-size: 18px;
     }
   }
 
