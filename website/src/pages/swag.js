@@ -129,6 +129,7 @@ class Brews extends React.Component {
    
 
     render() {
+        const eventbrite = "https://www.eventbrite.com/e/suds-on-the-square-oktoberfest-tickets-168951395171"
         return (
             <div className="brews-background">
                 {/* <div className="mobile-menu-button-wrapper">
@@ -144,28 +145,38 @@ class Brews extends React.Component {
                 </h3>
                 <div className="brew-logo-container">
                     <h2 className="swag-header">Barware</h2>
-                    <div className="swag-item">
-                        <img className="swag-item" src={bottleOpener} />
-                        <p>Bottle Opener</p>
-                    </div>
+                    <a href={eventbrite}>
+                        <div className="swag-item">
+                            <img className="swag-item" src={bottleOpener} />
+                            <p>Bottle Opener</p>
+                        </div>
+                    </a>
                     <h2 className="swag-header">Tees</h2>
-                    <div className="swag-item">
-                        <img className="swag-item" src={astro} />
-                        <p>Astronaut T</p>
-                    </div>
-                    <div className="swag-item">
-                        <img className="swag-item" src={footballBlue} />
-                        <p>Football T - Periwinkle</p>
-                    </div>
-                    <div className="swag-item">
-                        <img className="swag-item" src={footballOrange} />
-                        <p>Football T - Orange</p>
-                    </div>
+                    <a href={eventbrite}>
+                        <div className="swag-item">
+                            <img className="swag-item" src={astro} />
+                            <p>Astronaut T</p>
+                        </div>
+                    </a>
+                    <a href={eventbrite}>
+                        <div className="swag-item">
+                            <img className="swag-item" src={footballBlue} />
+                            <p>Football T - Periwinkle</p>
+                        </div>
+                    </a>
+                    <a href={eventbrite}>
+                        <div className="swag-item">
+                            <img className="swag-item" src={footballOrange} />
+                            <p>Football T - Orange</p>
+                        </div>
+                    </a>
                     <h2 className="swag-header">Throws</h2>
-                    <div className="swag-item">
-                        <img className="swag-item" src={throws} />
-                        <p>Throw blanket</p>
-                    </div>
+                    <a href={eventbrite}>
+                        <div className="swag-item">
+                            <img className="swag-item" src={throws} />
+                            <p>Throw blanket</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div className={"menu-paper " + (this.state.open ? "menu-paper-open" : "")}>

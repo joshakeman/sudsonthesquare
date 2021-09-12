@@ -828,6 +828,13 @@ img.bg {
     margin-bottom: 15px;
 }
 
+@media screen and (max-width: 550px) {
+    .bottles {
+        width: 125px;
+        margin-bottom: 9px;
+    }
+  }
+
 .logo-wrapper {
     display: flex;
     align-items: center;
@@ -835,7 +842,7 @@ img.bg {
 }
 
 .caps-container {
-    width: 1000px;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -933,6 +940,55 @@ img.bg {
 }
 .caps-bottom-row {
     display: flex;
+}
+
+@media screen and (max-width: 700px) {
+    .caps-top-row {
+        flex-direction: column;
+    }
+    .caps-bottom-row {
+        flex-direction: column;
+    }
+    #sponsors-cap {
+        width: 175px;
+        height: 175px;
+        margin: 0;
+        position: inherit;
+    }
+    #faq-cap {
+        width: 175px;
+        height: 175px;
+        margin: 0;
+        margin-right: 0;
+        position:inherit;
+    }
+    #events-cap {
+        width: 175px;
+        height: 175px;
+        margin: 0;
+    }
+    #contact-cap {
+        width: 175px;
+        height: 175px;
+        margin: 0;
+    }
+    
+    #hosts-cap {
+        width: 175px;
+        height: 175px;
+        margin: 0;
+        position: inherit;
+    }
+    #links-cap {
+        width: 175px;
+        height: 175px;
+        margin: 0;
+    }
+    #map-cap {
+        width: 175px;
+        height: 175px;
+        margin: 0;
+    }
 }
 
 
