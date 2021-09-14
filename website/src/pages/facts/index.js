@@ -9,7 +9,7 @@ import links from '../../images/bottle-caps/Links.png'
 import map from '../../images/bottle-caps/map.png'
 import sponsors from '../../images/bottle-caps/SponsorS.png'
 
-import menuButton from '../../images/menu-button.png'
+import StationaryFlightMenu from '../../components/stationaryFlightMenu'
 import '../../styles/home.css'
 
 export default function facts() {
@@ -22,9 +22,7 @@ export default function facts() {
 
     return (
         <div className="facts-background" id="cement-bg">
-            {/* <div className="mobile-menu-button-wrapper">
-                <img className="mobile-menu-button" src={menuButton} onClick={openMenu} />
-            </div> */}
+            <StationaryFlightMenu />
             <div className="facts-header">
                 <div className="logo-wrapper">
                     <img src={bottles} className="bottles" />

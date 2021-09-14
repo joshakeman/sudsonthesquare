@@ -1,26 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import guitar from '../images/guitar.png'
 import singer from '../images/singing-lady.png'
+import MustacheMenu from '../components/mustacheMenu'
+import StationaryFlightMenu from '../components/stationaryFlightMenu'
 
 import menuButton from '../images/menu-button.png'
 import '../styles/home.css'
 
-export default function tunes() {
+export default function Tunes() {
+    const [isOpen, setOpen] = useState(false)
 
-    const openMenu = () => {
-        this.setState({
-            open: !this.state.open
-        })
+    let toggleMenu = () => {
+        console.log("toggling menu")
+        setOpen(!isOpen)
     }
 
     return (
         <>
-        <div className="tunes-background">
-            {/* <div className="mobile-menu-button-wrapper">
-                <img className="mobile-menu-button" src={menuButton} onClick={openMenu} />
-            </div> */}
-            
-            <div className="tunes-header">
+        <div className="facts-background">
+            <StationaryFlightMenu/>            
+            <div className="facts-header" id="tunes-header">
                 <div className="logo-wrapper">
                     <h1 className="tunes-title">TUNES</h1>
                     <img src={guitar} id="guitar" />
@@ -46,6 +45,7 @@ export default function tunes() {
 
             <div className="tunes-mobile-content">
             <div className="mobile-paper-wrapper-other">
+                <StationaryFlightMenu/>
                 <div className="tunes-mobile-header">
                     <div className="logo-wrapper">
                         <h1 className="tunes-title">TUNES</h1>

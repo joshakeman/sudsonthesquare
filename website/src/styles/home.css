@@ -149,7 +149,7 @@ img.paper {
         flex-direction: column;
         align-items: center;
         background-position-y: 3%;
-        height: 1400px;
+        height: 1260px;
     }
 }
 
@@ -771,7 +771,7 @@ img.bg {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 100px 0 20px 0;
+    margin: 0 0 20px 0;
     padding: 10px;
     width: 564px;
 }
@@ -1005,6 +1005,12 @@ img.bg {
     margin: 10px;
 }
 
+@media (max-width: 500px) {
+    .gallery-item {
+        width: 100%;
+    }
+}
+
 /* Mobile Menu */
 
 .menu-paper {
@@ -1084,6 +1090,7 @@ img.bg {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -1126,7 +1133,7 @@ img.bg {
 }
 
 @media (max-width: 701px) {
-    .tunes-header {
+    #tunes-header {
         display: none;
     }
 }
@@ -1141,7 +1148,7 @@ img.bg {
 
 @media screen and (max-width: 700px) {
     .tunes-mobile-header {
-        width: 80%;
+        width: 100%;
         padding: 20px 10px;
     }
 
@@ -1159,9 +1166,9 @@ img.bg {
         font-size: 72px;
     }
     
-    /* .pix-subtitle {
-        font-size: 11px;
-    } */
+    .tunes-title {
+        font-size: 50px;
+    }
   }
 
 @media screen and (max-width: 450px) {
@@ -1179,11 +1186,17 @@ img.bg {
     margin: 0;
 }
 
+@media screen and (max-width: 600px) {
+    #guitar {
+        max-width: 40%;
+    }
+  }
+
 .tunes-content {
     width: 100%;
     max-width: 860px;
     margin: 0 auto;
-    position: relative;
+    display:flex;
 }
 
 @media screen and (max-width: 700px) { /* Specific to this particular image */
@@ -1201,9 +1214,6 @@ img.bg {
 }
 
 .singer-photo {
-    position: absolute;
-    top: 0;
-    left: 20px;
     width: 42%;
 }
 
@@ -1220,9 +1230,6 @@ img.bg {
 
 .description-sheet {
     background: url('../images//single-sheet.png');
-    position: absolute;
-    top: 0;
-    right: 0;
     padding: 60px;
     width: 60%;
     background-size: contain;
@@ -1386,7 +1393,7 @@ img.bg {
     position: absolute;
     left: 1500px;
     width: 460px;
-    height: 185px;
+    height: 173px;
     z-index: 20;
     background: url('../images/flight-3-optimized.png');
     background-size: contain;
@@ -1406,6 +1413,60 @@ img.bg {
 .flighted {
     left: 385px;
 }
+
+.stationary-flight-menu {
+    width: 386px;
+    height: 141px;
+    z-index: 20;
+    background: url('../images/flight-3-optimized.png');
+    background-size: contain;
+    display: flex;
+}
+
+.stationary-flight-menu>a>#tix-flight-btn {
+    width: 47px;
+}
+.stationary-flight-menu>a>.flight-btn {
+    width: 39px;
+}
+
+.stationary-flight-menu-wrapper {
+    padding: 10px;
+    width: 860px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) { /* Specific to this particular image */
+    .stationary-flight-menu-wrapper {
+        justify-content: center;
+        width: 500px;
+    }
+    .stationary-flight-menu {
+        width: 288px;
+        height: 106px;
+        z-index: 20;
+        background: url('../images/flight-3-optimized.png');
+        background-size: contain;
+        display: flex;
+    }
+  }
+
+  @media screen and (max-width: 500px) { /* Specific to this particular image */
+    .stationary-flight-menu-wrapper {
+        justify-content: center;
+        width: 325px;
+    }
+    .stationary-flight-menu {
+        width: 288px;
+        height: 106px;
+        z-index: 20;
+        background: url('../images/flight-3-optimized.png');
+        background-size: contain;
+        display: flex;
+    }
+  }
 
 .mobile-flight-menu {
     position: absolute;
@@ -1493,4 +1554,15 @@ img.bg {
     opacity: 0.6;
     background-color: purple;
     bottom: 340;
+}
+
+.mustache-menu-wrapper {
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.mustache-menu-wrapper>img {
+    width: 250px;
 }

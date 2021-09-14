@@ -108,6 +108,7 @@ import astro from '../images/swag/astro.png'
 import throws from '../images/swag/throws.png'
 import footballBlue from '../images/swag/football_blue.png'
 import footballOrange from '../images/swag/football_orange.png'
+import StationaryFlightMenu from '../components/stationaryFlightMenu'
 
 import menuButton from '../images/menu-button.png'
 import '../styles/home.css'
@@ -132,9 +133,7 @@ class Brews extends React.Component {
         const eventbrite = "https://www.eventbrite.com/e/suds-on-the-square-oktoberfest-tickets-168951395171"
         return (
             <div className="brews-background">
-                {/* <div className="mobile-menu-button-wrapper">
-                    <img className="mobile-menu-button" src={menuButton} onClick={this.openMenu} />
-                </div> */}
+                <StationaryFlightMenu/>
                 <div className="brews-header">
                     <img src={dog} className="beer" />
                     <h1 className="brews-title">SWAG</h1>
