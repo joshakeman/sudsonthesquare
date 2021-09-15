@@ -620,6 +620,9 @@ img.bg {
     .brews-header {
         margin-bottom: 0;
     }
+    #sponsors-title{
+        font-size: 44px
+    }
 
     #abide-logo {
         width: 275px;
@@ -1654,6 +1657,10 @@ img.bg {
         position: relative;
         padding: 60px;
     }
+    .brickpaper-content {
+        padding: 0;
+    }
+
 }
 
 .links-link {
