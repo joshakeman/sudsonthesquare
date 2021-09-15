@@ -411,7 +411,7 @@ img.bg {
 
 .brews-background {
     background: url('../images/brews-background.jpg') no-repeat center center;
-    background-attachment: fixed;
+    background-attachment: fixed !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1660,7 +1660,6 @@ img.bg {
     .brickpaper-content {
         padding: 0;
     }
-
 }
 
 .links-link {
