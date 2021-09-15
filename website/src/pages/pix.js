@@ -9,6 +9,7 @@ import map from '../images/map.png'
 import sponsors from '../images/sponsors.png'
 
 import Gallery from '../components/gallery'
+import StationaryFlightMenu from '../components/stationaryFlightMenu'
 
 import menuButton from '../images/menu-buton.png'
 import '../styles/home.css'
@@ -20,9 +21,7 @@ export default function Pix() {
 
     return (
         <div className="facts-background">
-            {/* <div className="mobile-menu-button-wrapper">
-                <img className="mobile-menu-button" src={menuButton} onClick={openMenu} />
-            </div> */}
+            <StationaryFlightMenu />
                 <div className="facts-header">
                     <div className="logo-wrapper">
                         <h1 className="facts-title">PIX</h1>

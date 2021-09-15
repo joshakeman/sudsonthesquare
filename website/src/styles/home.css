@@ -798,6 +798,9 @@ img.bg {
     .pix-subtitle {
         font-size: 15px !important;
     }
+    .facts-background {
+        background-attachment: initial;
+    }
   }
 
 @media screen and (max-width: 600px) {
