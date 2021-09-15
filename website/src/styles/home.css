@@ -438,6 +438,10 @@ img.bg {
     text-align: center;
 }
 
+#sponsors-title {
+    font-size: 70px;
+}
+
 .brews-header {
     display: flex;
     align-items: center;
@@ -771,8 +775,6 @@ img.bg {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0 0 20px 0;
-    padding: 10px;
     width: 564px;
 }
 
@@ -1188,7 +1190,7 @@ img.bg {
 
 @media screen and (max-width: 600px) {
     #guitar {
-        max-width: 40%;
+        max-width: 33%;
     }
   }
 
@@ -1423,13 +1425,6 @@ img.bg {
     display: flex;
 }
 
-.stationary-flight-menu>a>#tix-flight-btn {
-    width: 47px;
-}
-.stationary-flight-menu>a>.flight-btn {
-    width: 39px;
-}
-
 .stationary-flight-menu-wrapper {
     padding: 10px;
     width: 860px;
@@ -1437,7 +1432,18 @@ img.bg {
     justify-content: flex-end;
     margin: 0 auto;
 }
+#stationary-tix-flight-btn {
+    width: 47px;
+}
+.stationary-flight-btn {
+    width: 38px;
+}
 
+@media screen and (max-width: 906px) {
+    .stationary-flight-menu-wrapper {
+        width: 600px;
+    }
+}
 @media screen and (max-width: 700px) { /* Specific to this particular image */
     .stationary-flight-menu-wrapper {
         justify-content: center;
@@ -1450,6 +1456,12 @@ img.bg {
         background: url('../images/flight-3-optimized.png');
         background-size: contain;
         display: flex;
+    }
+    #stationary-tix-flight-btn {
+        width: 38px;
+    }
+    .stationary-flight-btn {
+        width: 29px;
     }
   }
 
@@ -1565,4 +1577,75 @@ img.bg {
 }
 .mustache-menu-wrapper>img {
     width: 250px;
+}
+
+.brickpaper-background {
+    background: url('../images/brickwall-optimized.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.long-paper-bg {
+    background: url('../images/long-paper-\(1\).png');
+    width: 70%;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    padding: 60px;
+    background-repeat: no-repeat;
+}
+
+.brickpaper-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px 10px 20px;
+    flex-direction: column;
+    font-family: 'atticregular';
+    min-height: 300px;
+}
+
+.brickpaper-content>h4{
+    font-family: 'atticregular';
+}
+
+.host-logo {
+    width: 200px;
+}
+
+@media screen and (max-width: 906px) {
+    .long-paper-bg {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    .brickpaper-background {
+        width:100%;
+        background: url('../images//long-bricks-optimized.jpg');
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+    .long-paper-bg {
+        background: url('../images/long-paper-\(1\).png');
+        width: 100%;
+        background-position: top center;
+        background-size: cover;
+        position: relative;
+        padding: 60px;
+    }
+}
+
+.links-link {
+    cursor: pointer;
 }

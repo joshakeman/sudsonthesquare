@@ -11,6 +11,7 @@ import sponsors from '../../images/bottle-caps/SponsorS.png'
 
 import StationaryFlightMenu from '../../components/stationaryFlightMenu'
 import '../../styles/home.css'
+import { Link } from "gatsby"
 
 export default function facts() {
 
@@ -34,7 +35,9 @@ export default function facts() {
             </div>
             <div className="caps-container">
                 <div className="caps-top-row">
-                    <img src={sponsors} id="sponsors-cap" />
+                    <Link to="/facts/sponsors">
+                        <img src={sponsors} id="sponsors-cap" />
+                    </Link>
                     <img src={faq} id="faq-cap" />
                     <img src={events} id="events-cap" />
                 </div>

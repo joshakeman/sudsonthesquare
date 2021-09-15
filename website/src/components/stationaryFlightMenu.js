@@ -7,22 +7,22 @@ export default function StationaryFlightMenu() {
             <div className="stationary-flight-menu">
                 {/* <img src={flight} /> */}
                 <Link to="https://www.eventbrite.com/e/suds-on-the-square-oktoberfest-tickets-168951395171">
-                    <div id="tix-flight-btn" className="flight-btn" />
+                    <div id="stationary-tix-flight-btn" className="stationary-flight-btn" />
                 </Link>
                 <Link to="/pix">
-                    <div id="pix-flight-btn" className="flight-btn" />
+                    <div id="pix-flight-btn" className="stationary-flight-btn" />
                 </Link>
                 <Link to="/tunes">
-                    <div id="tunes-flight-btn" className="flight-btn" />
+                    <div id="tunes-flight-btn" className="stationary-flight-btn" />
                 </Link>
                 <Link to="/brews">
-                    <div id="brews-flight-btn" className="flight-btn" />
+                    <div id="brews-flight-btn" className="stationary-flight-btn" />
                 </Link>
                 <Link to="/swag">
-                    <div id="swag-flight-btn" className="flight-btn" />
+                    <div id="swag-flight-btn" className="stationary-flight-btn" />
                 </Link>
                 <Link to="/facts">
-                    <div to="/facts" id="facts-flight-btn" className="flight-btn" />
+                    <div to="/facts" id="facts-flight-btn" className="stationary-flight-btn" />
                 </Link>
             </div>
         </div>

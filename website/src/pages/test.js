@@ -1,7 +1,7 @@
 import React from 'react'
-import BrickPaperLayout from '../../components/brickPaperLayout'
-import hostLogo from '../../images/host_logo.png'
-import kLogo from '../../images/k_logo.png'
+import BrickPaperLayout from '../components/brickPaperLayout'
+import hostLogo from '../images/host_logo.png'
+import kLogo from '../images/k_logo.png'
 
 export default function test() {
     return (
