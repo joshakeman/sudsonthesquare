@@ -38,13 +38,23 @@ export default function facts() {
                     <Link to="/facts/sponsors">
                         <img src={sponsors} id="sponsors-cap" />
                     </Link>
-                    <img src={faq} id="faq-cap" />
-                    <img src={events} id="events-cap" />
+                    <Link to="/facts/faq">
+                        <img src={faq} id="faq-cap" />
+                    </Link>
+                    <Link to="/facts/events">
+                        <img src={events} id="events-cap" />
+                    </Link>
                 </div>
                 <div className="caps-bottom-row">
-                    <img src={contact} id="contact-cap" />
-                    <img src={hosts} id="hosts-cap" />
-                    <img src={links} id="links-cap" />
+                    <a href="mailto:kiwanisfayco@gmail.com">
+                        <img src={contact} id="contact-cap" />
+                    </a>
+                    <Link to="/facts/hosts">
+                        <img src={hosts} id="hosts-cap" />
+                    </Link>
+                    <Link to="/facts/links">
+                        <img src={links} id="links-cap" />
+                    </Link>
                     <img src={map} id="map-cap" />
                 </div>
             </div>
