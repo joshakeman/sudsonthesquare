@@ -22,7 +22,7 @@ export default function facts() {
     }
 
     return (
-        <div className="facts-background" id="cement-bg">
+        <div className="facts-background">
             <StationaryFlightMenu />
             <div className="facts-header">
                 <div className="logo-wrapper">

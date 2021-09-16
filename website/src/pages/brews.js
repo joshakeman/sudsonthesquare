@@ -38,51 +38,51 @@ class Brews extends React.Component {
                 amazing concoctions
                 </h3>
                 <div className="brew-logo-container">
-                    <div className="brew-logo" id="abide-logo">
-                        
-                    </div>
-                    <div className="brew-logo" id="yeungling-logo">
-                        
-                    </div>
-                    <div className="brew-logo" id="beacon-logo">
-                        
-                    </div>
-                    <div className="brew-logo" id="cochran-logo">
-                        
-                    </div>
-                    <div className="brew-logo" id="deschutes-logo">
-                        
-                    </div>
-                    <div className="brew-logo" id="drycounty-logo">
-                        
-                    </div>
-                    <div className="brew-logo" id="firemaker-logo">
-                        
-                    </div>
-                    <div className="brew-logo" id="jekyll-logo">
-                        
-                    </div>
-                    <div className="brew-logo" id="linecreek-logo">
-                        
-                    </div>
-                    <div className="brew-logo" id="mckenzie-logo">
-                        
-                    </div>
-                    <div className="brew-logo" id="mondaynight-logo">
-                        
-                    </div>
-                    <div className="brew-logo" id="newbelgium-logo">
-                        
-                    </div>
-                    <div className="brew-logo" id="redhare-logo">
-                        
-                    </div>
-                    <div className="brew-logo" id="stbc-logo">
-                        
-                    </div>
-                    <div className="brew-logo" id="wildleap-logo">
-                        
-                    </div>
+                    <a href="https://linecreekbrewing.com/" target="_blank">
+                        <div className="brew-logo" id="linecreek-logo" />
+                    </a>
+                    <a href="https://www.facebook.com/AbideBrewing/" target="_blank">
+                        <div className="brew-logo" id="abide-logo"/>
+                    </a>
+                    <a href="https://www.yuengling.com/" target="_blank">
+                        <div className="brew-logo" id="yeungling-logo"/>
+                    </a>
+                    <a href="https://www.beacon.beer/" target="_blank">
+                        <div className="brew-logo" id="beacon-logo"/>
+                    </a>
+                    <a href="https://www.cochranmillbrewing.com/" target="_blank">
+                        <div className="brew-logo" id="cochran-logo"/>
+                    </a>
+                    <a href="https://www.deschutesbrewery.com/" target="_blank">
+                        <div className="brew-logo" id="deschutes-logo"/>
+                    </a>
+                    <a href="https://drycountybrewco.com/" target="_blank">
+                        <div className="brew-logo" id="drycounty-logo"/>
+                    </a>
+                    <a href="https://www.firemakerbeer.com/" target="_blank">
+                        <div className="brew-logo" id="firemaker-logo"/>
+                    </a>
+                    <a href="https://www.jekyllbrewing.com/" target="_blank">
+                        <div className="brew-logo" id="jekyll-logo"/>
+                    </a>
+                    <a href="https://mckenziebrewing.com/" target="_blank">
+                        <div className="brew-logo" id="mckenzie-logo"/>
+                    </a>
+                    <a href="https://mondaynightbrewing.com/" target="_blank">
+                        <div className="brew-logo" id="mondaynight-logo"/>
+                    </a>
+                    <a href="https://www.newbelgium.com/" target="_blank">
+                        <div className="brew-logo" id="newbelgium-logo"/>
+                    </a>
+                    <a href="https://www.redharebrewing.com/" target="_blank">
+                        <div className="brew-logo" id="redhare-logo"/>
+                    </a>
+                    <a href="https://stbcbeer.com/" target="_blank">
+                        <div className="brew-logo" id="stbc-logo"/>
+                    </a>
+                    <a href="https://www.wildleap.com/" target="_blank">
+                        <div className="brew-logo" id="wildleap-logo"/>
+                    </a>
                 </div>
 
                 <img className="invisible-images" src={abide} />

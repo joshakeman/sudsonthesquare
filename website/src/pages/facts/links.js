@@ -12,16 +12,16 @@ export default function test() {
                 <h1 className="brews-title" id="sponsors-title">LINKS</h1>
             </div>
             <div className="brickpaper-content">
-                <a href="https://www.atlutd.com/" className="links-link">
+                <a href="https://www.atlutd.com/" className="links-link" target="_blank">
                     <img className="host-logo" src={atlantaUnited} />
                 </a>
-                <a href="https://fayetteville-ga.gov/" className="links-link">
+                <a href="https://fayetteville-ga.gov/" className="links-link" target="_blank">
                     <img className="host-logo" src={cityfayetteville} />
                 </a>
-                <a href="https://www.lyft.com/" className="links-link">
+                <a href="https://www.lyft.com/" className="links-link" target="_blank">
                     <img className="host-logo" src={lyft} />
                 </a>
-                <a href="https://www.uber.com/" className="links-link">
+                <a href="https://www.uber.com/" className="links-link" target="_blank">
                     <img className="host-logo" src={uber} />
                 </a>
             </div>

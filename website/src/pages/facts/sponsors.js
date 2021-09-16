@@ -10,8 +10,12 @@ export default function test() {
                 <h1 className="brews-title" id="sponsors-title">SPONSORS</h1>
             </div>
             <div className="brickpaper-content">
-                <img className="host-logo" src={atlantaUnited} />
-                <img className="host-logo" src={cityfayetteville} />
+                <a href="https://www.atlutd.com/" className="links-link" target="_blank">
+                    <img className="host-logo" src={atlantaUnited} />
+                </a>
+                <a href="https://fayetteville-ga.gov/" className="links-link" target="_blank">
+                    <img className="host-logo" src={cityfayetteville} />
+                </a>
             </div>
         </BrickPaperLayout>
     )

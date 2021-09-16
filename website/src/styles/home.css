@@ -37,8 +37,8 @@
 }
 
 .background {
-    background: url('../images/brickwall-optimized.jpg') no-repeat center center fixed;
-    /* background: url('../images/cement.jpg') no-repeat center center fixed;  */
+    background: url('../images/brickwall-optimized.jpg') no-repeat center center;
+    background-attachment: fixed !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -137,7 +137,7 @@ img.paper {
     background: url('../images/paperbrick_wall.jpg') no-repeat;
     background-size: cover;
     /* width: 700px; */
-    height: 1118px;
+    height: 650px;
     position: relative;
     display: none;
     background-position-y: 7%;
@@ -1212,6 +1212,7 @@ img.bg {
     max-width: 860px;
     margin: 0 auto;
     display:flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 700px) { /* Specific to this particular image */
@@ -1247,9 +1248,16 @@ img.bg {
     background: url('../images//single-sheet.png');
     padding: 60px;
     width: 60%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    min-height: 350px;
 }
+
+@media screen and (max-width: 700px) { /* Specific to this particular image */
+    .description-sheet {
+        min-height: 200px;
+    }
+  }
 
 .tunes-description-title {
     font-family: 'atticregular';
@@ -1620,7 +1628,7 @@ img.bg {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px 10px 20px;
+    padding: 40px 60px 0 60px;
     flex-direction: column;
     font-family: 'atticregular';
     min-height: 300px;
