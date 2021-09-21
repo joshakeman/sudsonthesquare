@@ -103,7 +103,7 @@ img.paper {
     background: url('../images/paperbrick_wall.jpg') no-repeat;
     background-size: cover;
     width: 700px;
-    height: 1118px;
+    height: auto;
     position: relative;
     display: none;
     background-position-y: 7%;
@@ -117,7 +117,7 @@ img.paper {
         padding-top: 21%;
     }
 }
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
     .mobile-paper-wrapper {
         height: 1032px;
     }
@@ -131,7 +131,7 @@ img.paper {
     .mobile-paper-wrapper {
         height: 821px;
     }
-}
+} */
 
 .mobile-paper-wrapper-other {
     background: url('../images/paperbrick_wall.jpg') no-repeat;
