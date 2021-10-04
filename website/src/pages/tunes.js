@@ -69,9 +69,9 @@ Walter Hornsby has performed with:
 ·         and Lou Reed
 <br></br>
 The Goodfellas play a wide assortment of great music: Motown, Classic Rock, Van Morrison, Eric Clapton and many more.
-<br></br><br></br>
-<h4>Bourbon Tumbleweed</h4>
-
+</p>
+<h4 className="tunes-description-title">Bourbon Tumbleweed</h4>
+<p className="tunes-description">
 Welcome to the wild world of bourbon Tumbleweed. This band is a rock rhythm and blues Collective made up of veteran Musicians from the Atlanta music scene!
 Make sure to bring your dancing shoes and hoist your beers , these guys will keep you moving and grooving all night long!!!!
 
@@ -98,10 +98,10 @@ This is a great party band that you don’t want to miss!!!
                             <img src={singer} />
                         </div>
                         <div>
-                            <p className="tunes-description">
                             <h4 className="tunes-description-title">
                         Goodfellas
                     </h4>
+                            <p className="tunes-description">
 The Goodfellas members are Wallace Reed and Walter Hornsby. They have been performing together or over 10 years. Walter has performed with or recorded with these great artists:
 ·         John Mayer
 
@@ -133,13 +133,14 @@ Walter Hornsby has performed with:
 ·         and Lou Reed
 <br></br>
 The Goodfellas play a wide assortment of great music: Motown, Classic Rock, Van Morrison, Eric Clapton and many more.
-<br></br><br></br>
-<h4>Bourbon Tumbleweed</h4>
-
+</p>
+<h4 className="tunes-description-title">Bourbon Tumbleweed</h4>
+<p className="tunes-description">
 Welcome to the wild world of bourbon Tumbleweed. This band is a rock rhythm and blues Collective made up of veteran Musicians from the Atlanta music scene!
 Make sure to bring your dancing shoes and hoist your beers , these guys will keep you moving and grooving all night long!!!!
 
-This is a great party band that you don’t want to miss!!!                              </p>
+This is a great party band that you don’t want to miss!!!                              
+</p>
                         </div>
                     </div>
                 </div>
