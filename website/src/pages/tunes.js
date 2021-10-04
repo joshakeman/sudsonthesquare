@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import guitar from '../images/guitar.png'
-import singer from '../images/singing-lady.png'
+import singer from '../images/Goodfellas.jpg'
 import MustacheMenu from '../components/mustacheMenu'
 import StationaryFlightMenu from '../components/stationaryFlightMenu'
 
@@ -30,16 +30,53 @@ export default function Tunes() {
                 </h2>
             </div>
             <div className="tunes-content">
-                {/* <div className="singer-photo">
+                <div className="singer-photo">
                     <img src={singer} />
-                </div> */}
+                </div>
                 <div className="description-sheet">
-                    <h3 className="tunes-description-title">
-                        To Be Announced ...
-                    </h3>
-                    {/* <p className="tunes-description">
-                    Donna Hopkins is the real deal. Born and raised on an Alabama farm, Donna witnessed life in the South first hand, channeling it into the soulful music that she creates and performs. Music runs in her family; her mother performed rock and roll in go-go boots and mini-skirts and her grandfather was a fine musician in his own right. Donna is a consummate seasoned songwriter and performer, and has opened for and shared the stage with such luminaries as Col. Bruce Hampton, Derek Trucks, Francine Reed, Joe Bonamassa, Emily Saliers, Jerry Lee Lewis, Stevie Wonder, Tanya Tucker and Robert Cray. As much at home in an intimate listening venue as she is on a giant festival stage, Donna Hopkins performs both solo and accompanied by the perfectly seasoned group of musicians who make up the Donna Hopkins Band, and is always a crowd pleaser.
-                    </p> */}
+                    <h4 className="tunes-description-title">
+                        Goodfellas
+                    </h4>
+                    <p className="tunes-description">
+The Goodfellas members are Wallace Reed and Walter Hornsby. They have been performing together or over 10 years. Walter has performed with or recorded with these great artists:
+·         John Mayer
+
+·         Jeff Cook (Alabama Guitarist)
+
+·         Bertie Higgins (Key Largo)
+
+·         Billy Jo Royal (Down in the Boondocks)
+
+·         Joe South
+
+·         and Wallace’s son, Clay Cook with the Zack Brown Band
+<br></br>
+
+Walter Hornsby has performed with:
+
+·         Chuck Berry
+
+·         Charlie Daniels Band
+
+·         Rufus Band
+
+·         Chank La Kahn
+
+·         Wet Willie
+
+·         Allman Brothers
+
+·         and Lou Reed
+<br></br>
+The Goodfellas play a wide assortment of great music: Motown, Classic Rock, Van Morrison, Eric Clapton and many more.
+<br></br><br></br>
+<h4>Bourbon Tumbleweed</h4>
+
+Welcome to the wild world of bourbon Tumbleweed. This band is a rock rhythm and blues Collective made up of veteran Musicians from the Atlanta music scene!
+Make sure to bring your dancing shoes and hoist your beers , these guys will keep you moving and grooving all night long!!!!
+
+This is a great party band that you don’t want to miss!!!                    
+                    </p>
                 </div>
             </div>
 
@@ -57,16 +94,52 @@ export default function Tunes() {
                         </h2>
                     </div>
                     <div className="tunes-content-mobile">
-                        {/* <div className="singer-photo">
+                        <div className="singer-photo">
                             <img src={singer} />
-                        </div> */}
+                        </div>
                         <div>
-                            <h3 className="tunes-description-title">
-                                To Be Announced ...
-                            </h3>
-                            {/* <p className="tunes-description">
-                            Donna Hopkins is the real deal. Born and raised on an Alabama farm, Donna witnessed life in the South first hand, channeling it into the soulful music that she creates and performs. Music runs in her family; her mother performed rock and roll in go-go boots and mini-skirts and her grandfather was a fine musician in his own right. Donna is a consummate seasoned songwriter and performer, and has opened for and shared the stage with such luminaries as Col. Bruce Hampton, Derek Trucks, Francine Reed, Joe Bonamassa, Emily Saliers, Jerry Lee Lewis, Stevie Wonder, Tanya Tucker and Robert Cray. As much at home in an intimate listening venue as she is on a giant festival stage, Donna Hopkins performs both solo and accompanied by the perfectly seasoned group of musicians who make up the Donna Hopkins Band, and is always a crowd pleaser.
-                            </p> */}
+                            <p className="tunes-description">
+                            <h4 className="tunes-description-title">
+                        Goodfellas
+                    </h4>
+The Goodfellas members are Wallace Reed and Walter Hornsby. They have been performing together or over 10 years. Walter has performed with or recorded with these great artists:
+·         John Mayer
+
+·         Jeff Cook (Alabama Guitarist)
+
+·         Bertie Higgins (Key Largo)
+
+·         Billy Jo Royal (Down in the Boondocks)
+
+·         Joe South
+
+·         and Wallace’s son, Clay Cook with the Zack Brown Band
+<br></br>
+
+Walter Hornsby has performed with:
+
+·         Chuck Berry
+
+·         Charlie Daniels Band
+
+·         Rufus Band
+
+·         Chank La Kahn
+
+·         Wet Willie
+
+·         Allman Brothers
+
+·         and Lou Reed
+<br></br>
+The Goodfellas play a wide assortment of great music: Motown, Classic Rock, Van Morrison, Eric Clapton and many more.
+<br></br><br></br>
+<h4>Bourbon Tumbleweed</h4>
+
+Welcome to the wild world of bourbon Tumbleweed. This band is a rock rhythm and blues Collective made up of veteran Musicians from the Atlanta music scene!
+Make sure to bring your dancing shoes and hoist your beers , these guys will keep you moving and grooving all night long!!!!
+
+This is a great party band that you don’t want to miss!!!                              </p>
                         </div>
                     </div>
                 </div>
