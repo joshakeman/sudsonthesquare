@@ -1231,8 +1231,8 @@ img.bg {
 
 .singer-photo {
     width: 42%;
-    border: 10px solid white;
-    border-radius: 10px;
+    /* border: 10px solid white;
+    border-radius: 10px; */
 }
 
 @media screen and (max-width: 700px) { /* Specific to this particular image */
