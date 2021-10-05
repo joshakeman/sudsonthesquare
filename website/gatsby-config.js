@@ -1,5 +1,8 @@
+const siteUrl = process.env.URL || `https://fayettebeerfest.com`
+
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://fayettebeerfest.com`,
     title: `Suds on the Square`,
     description: `Suds on the Square beer festival and family event presented by Kiwanis Club of Fayette County.`,
     author: `Kiwanis Club of Fayette County`,
@@ -29,6 +32,7 @@ module.exports = {
         icon: `src/images/kiwanis-logo.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
