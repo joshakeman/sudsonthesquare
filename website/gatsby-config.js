@@ -3,6 +3,8 @@ module.exports = {
     title: `Suds on the Square`,
     description: `Suds on the Square beer festival and family event presented by Kiwanis Club of Fayette County.`,
     author: `Kiwanis Club of Fayette County`,
+    keywords: `beer festival, beer fest, fayette county, fayetteville, suds on the square`,
+    image: `src/images/mainLogoBeerfest.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
