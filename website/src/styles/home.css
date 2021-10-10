@@ -1533,11 +1533,11 @@ img.bg {
     opacity: 0.6;
 }
 
-#tix-flight-btn {
+.tix-flight-btn {
     width: 60px;
 }
 @media (max-width: 701px) {
-    #tix-flight-btn {
+    .tix-flight-btn {
         width: 100%;
     }
     .flight-btn {
