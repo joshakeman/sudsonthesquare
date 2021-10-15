@@ -1675,3 +1675,16 @@ img.bg {
 .links-link {
     cursor: pointer;
 }
+
+.map-wrapper {
+    max-width: 100%;
+    width: 800px;
+    height: 600px;
+    margin: 20px auto 0 auto;
+    overflow-x: scroll;
+}
+
+.map-img {
+    width: 100%;
+    overflow-x: scroll;
+}
