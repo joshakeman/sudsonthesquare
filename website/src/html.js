@@ -31,6 +31,26 @@ export default function HTML(props) {
                 `,
           }}
         />
+        <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js" />
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+            console.log("Loaded widget")
+            var exampleCallback = function() {
+              console.log('Order complete!');
+          };
+      
+          window.EBWidgets.createWidget({
+              widgetType: 'checkout',
+              eventId: '168951395171',
+              modal: true,
+              modalTriggerElementId: 'eventbrite-widget-modal-trigger-168951395171',
+              onOrderComplete: exampleCallback
+          });
+                `,
+          }}
+        />
       </body>
     </html>
   )

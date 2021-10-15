@@ -1533,11 +1533,11 @@ img.bg {
     opacity: 0.6;
 }
 
-#tix-flight-btn {
+.tix-flight-btn {
     width: 60px;
 }
 @media (max-width: 701px) {
-    #tix-flight-btn {
+    .tix-flight-btn {
         width: 100%;
     }
     .flight-btn {
@@ -1674,4 +1674,17 @@ img.bg {
 
 .links-link {
     cursor: pointer;
+}
+
+.map-wrapper {
+    max-width: 100%;
+    width: 800px;
+    height: 600px;
+    margin: 20px auto 0 auto;
+    overflow-x: scroll;
+}
+
+.map-img {
+    width: 100%;
+    overflow-x: scroll;
 }
