@@ -55,7 +55,9 @@ export default function facts() {
                     <Link to="/facts/links">
                         <img src={links} id="links-cap" />
                     </Link>
-                    <img src={map} id="map-cap" />
+                    <Link to="/facts/map">
+                        <img src={map} id="map-cap" />
+                    </Link>
                 </div>
             </div>
         </div>
