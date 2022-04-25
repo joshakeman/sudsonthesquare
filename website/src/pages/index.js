@@ -9,9 +9,9 @@ import Img from "gatsby-image"
 import brickwall from '../images/brickwall.jpg'
 import background from '../images/paper-only-background.png'
 import menuButton from '../images/menu-buton.png'
-import mainLogo from '../images/mainLogoBeerfest.png'
-import mainLogoMobile from '../images/mobile-logo-w-spider.png'
-import timeDate from '../images/time_date.png'
+import mainLogo from '../images/suds-main-logo.png'
+// import mainLogoMobile from '../images/mobile-logo-w-spider.png'
+import timeDate from '../images/2022-time.png'
 import kiwanis from '../images/kiwanis-logo.png'
 import mainstreet from '../images/k_logo.png'
 import dog from '../images/dog.png'
@@ -56,7 +56,7 @@ const IndexPage = () => {
               <img className="mainstreet-logo" src={mainstreet} />
               <img className="dog-logo" src={dog} />
             </div>
-            <img className="spider" src={spider} />
+            {/* <img className="spider" src={spider} /> */}
           </div>
           <div className="paper-right">
             <img className="menu-button" src={menuButton} onClick={() => toggleMenu(!showMenu)} />
@@ -70,9 +70,9 @@ const IndexPage = () => {
         {/* Mobile Paper */}
         <div className="mobile-paper-wrapper">
             <div className="mobile-logo-wrapper">
-              <img className="mobile-main-logo" src={mainLogoMobile} />
+              {/* <img className="mobile-main-logo" src={mainLogoMobile} /> */}
               <img className="mobile-main-logo" src={timeDate} />
-              <div className="spider-mobile-button" onClick={() => toggleMobileMenu(!showMobileMenu)} />
+              {/* <div className="spider-mobile-button" onClick={() => toggleMobileMenu(!showMobileMenu)} /> */}
             </div>
             <div className="mobile-footer">
               <img className="mobile-kiwanis-logo" src={kiwanis} />
