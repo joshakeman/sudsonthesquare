@@ -10,7 +10,7 @@ export default function flightMenu({ open }) {
             open ? (
                 <div className="flight-menu flighted">
                     {/* <img src={flight} /> */}
-                    <Link to="https://www.eventbrite.com/e/suds-on-the-square-oktoberfest-tickets-168951395171" >
+                    <Link to="https://www.eventbrite.com/e/suds-on-the-square-beer-wine-and-music-festival-tickets-322485882957?aff=erelexpmlt" >
                         <div id="tix-flight-btn" className="flight-btn" />
                     </Link>
                     <Link to="/pix">
