@@ -115,6 +115,7 @@ img.paper {
         flex-direction: column;
         align-items: center;
         padding-top: 21%;
+        min-height: 100vh;
     }
 }
 /* @media (max-width: 650px) {
@@ -157,6 +158,7 @@ img.paper {
     width: 70%;
     margin-bottom: 0;
     position: relative;
+    margin-top: 120px;
 }
 
 .mobile-main-logo {

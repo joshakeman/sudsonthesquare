@@ -10,7 +10,7 @@ import brickwall from '../images/brickwall.jpg'
 import background from '../images/paper-only-background.png'
 import menuButton from '../images/menu-buton.png'
 import mainLogo from '../images/suds-main-logo.png'
-// import mainLogoMobile from '../images/mobile-logo-w-spider.png'
+import mainLogoMobile from '../images/suds-main-logo.png'
 import timeDate from '../images/2022-time.png'
 import kiwanis from '../images/kiwanis-logo.png'
 import mainstreet from '../images/k_logo.png'
@@ -38,7 +38,7 @@ const IndexPage = () => {
       }
     `)
   const [showMenu, toggleMenu] = useState(false);
-  const [showMobileMenu, toggleMobileMenu] = useState(false);
+  const [showMobileMenu, toggleMobileMenu] = useState(true);
 
   return (
     <>
@@ -70,7 +70,7 @@ const IndexPage = () => {
         {/* Mobile Paper */}
         <div className="mobile-paper-wrapper">
             <div className="mobile-logo-wrapper">
-              {/* <img className="mobile-main-logo" src={mainLogoMobile} /> */}
+              <img className="mobile-main-logo" src={mainLogoMobile} />
               <img className="mobile-main-logo" src={timeDate} />
               {/* <div className="spider-mobile-button" onClick={() => toggleMobileMenu(!showMobileMenu)} /> */}
             </div>
