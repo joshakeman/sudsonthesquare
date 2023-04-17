@@ -6,7 +6,7 @@ export default function StationaryFlightMenu() {
         <div className="stationary-flight-menu-wrapper">
             <div className="stationary-flight-menu">
                 {/* <img src={flight} /> */}
-                <Link to="https://www.eventbrite.com/e/suds-on-the-square-beer-wine-and-music-festival-tickets-322485882957?aff=erelexpmlt">
+                <Link to="https://www.eventbrite.com/e/suds-on-the-square-beer-wine-and-music-festival-tickets-573040568767?aff=erelexpmlt">
                     <div id="stationary-tix-flight-btn" className="stationary-flight-btn" />
                 </Link>
                 <Link to="/pix">
