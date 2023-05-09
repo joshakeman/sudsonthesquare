@@ -38,7 +38,39 @@ class Brews extends React.Component {
                 amazing concoctions
                 </h3>
                 <div className="brew-logo-container">
-                    <a href="https://linecreekbrewing.com/" target="_blank">
+                <h3 className="brews-subtitle">Anderby</h3>
+                <h3 className="brews-subtitle">Anheuser-Busch</h3>
+                <h3 className="brews-subtitle">Beacon Brewery Co</h3>
+                <h3 className="brews-subtitle">Bell's Brewery</h3>
+                <h3 className="brews-subtitle">Bold Rock Hard Cider</h3>
+                <h3 className="brews-subtitle">Burnt Hickory Brewing</h3>
+                <h3 className="brews-subtitle">Camp Brewing</h3>
+                <h3 className="brews-subtitle">Cigar City Brewing</h3>
+                <h3 className="brews-subtitle">Coastal Empire</h3>
+                <h3 className="brews-subtitle">Cochran Mills</h3>
+                <h3 className="brews-subtitle">Contrast Artisan Ales</h3>
+                <h3 className="brews-subtitle">Dry County Brewing Co</h3>
+                <h3 className="brews-subtitle">Fall Line Brewing</h3>
+                <h3 className="brews-subtitle">Favorita Beer</h3>
+                <h3 className="brews-subtitle">Fire Maker Brewing Co</h3>
+                <h3 className="brews-subtitle">Halfway Crooks</h3>
+                <h3 className="brews-subtitle">Jekyll Brewing</h3>
+                <h3 className="brews-subtitle">Line Creek Brewing Co</h3>
+                <h3 className="brews-subtitle">McKenzies's</h3>
+                <h3 className="brews-subtitle">Mercier Orchards</h3>
+                <h3 className="brews-subtitle">Monday Night Brewing</h3>
+                <h3 className="brews-subtitle">Oskar Blues Brewery</h3>
+                <h3 className="brews-subtitle">Reformation Brewery</h3>
+                <h3 className="brews-subtitle">Round Trip Brewing Co</h3>
+                <h3 className="brews-subtitle">Senoia Beer</h3>
+                <h3 className="brews-subtitle">Service Brewing Co</h3>
+                <h3 className="brews-subtitle">Six Bridges Brewing Co</h3>
+                <h3 className="brews-subtitle">Southern Tier Brewing Co</h3>
+                <h3 className="brews-subtitle">Steady Hand Beer Co</h3>
+                <h3 className="brews-subtitle">Three Taverns Craft Brewery</h3>
+                <h3 className="brews-subtitle">Variant Brewing Co</h3>
+                <h3 className="brews-subtitle">Wild Leap Brew Co</h3>
+                    {/* <a href="https://linecreekbrewing.com/" target="_blank">
                         <div className="brew-logo" id="linecreek-logo" />
                     </a>
                     <a href="https://www.facebook.com/AbideBrewing/" target="_blank">
@@ -82,10 +114,10 @@ class Brews extends React.Component {
                     </a>
                     <a href="https://www.wildleap.com/" target="_blank">
                         <div className="brew-logo" id="wildleap-logo"/>
-                    </a>
+                    </a> */}
                 </div>
 
-                <img className="invisible-images" src={abide} />
+                {/* <img className="invisible-images" src={abide} />
                 <img className="invisible-images" src={yeungling} />
                 <img className="invisible-images" src={beacon} />
                 <img className="invisible-images" src={cochran} />
@@ -99,7 +131,7 @@ class Brews extends React.Component {
                 <img className="invisible-images" src={newbelgium} />
                 <img className="invisible-images" src={redhare} />
                 <img className="invisible-images" src={stbc} />
-                <img className="invisible-images" src={wildLeap} />
+                <img className="invisible-images" src={wildLeap} /> */}
             </div>
         )
     }
